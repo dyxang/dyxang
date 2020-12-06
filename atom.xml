@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://1inn.now.sh</id>
+    <title>途读</title>
+    <updated>2020-12-06T03:42:12.796Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://1inn.now.sh"/>
+    <link rel="self" href="https://1inn.now.sh/atom.xml"/>
+    <subtitle>我的小站</subtitle>
+    <logo>https://1inn.now.sh/images/avatar.png</logo>
+    <icon>https://1inn.now.sh/favicon.ico</icon>
+    <rights>All rights reserved 2020, 途读</rights>
+    <entry>
+        <title type="html"><![CDATA[最新情况]]></title>
+        <id>https://1inn.now.sh/post/zui-xin-qing-kuang/</id>
+        <link href="https://1inn.now.sh/post/zui-xin-qing-kuang/">
+        </link>
+        <updated>2020-11-21T12:04:33.000Z</updated>
+        <summary type="html"><![CDATA[<p>这里起到一个公告栏的作用，不需要点进详情</p>
+<h1 id="125">12.5</h1>
+<p>使用 <a href="https://github.com/zhouyupeng/minHtml">minhtml</a> 来压缩所有代码，进一步加快访问速度，另外要写一篇文章来测试一下极端条件访问测试</p>
+<h1 id="1121">11.21</h1>
+<p>上传了我的维基，虽说是前年知道的 <strong>TiddlyWiki</strong>，但是现在才用😓<br>
+同时把它放到了菜单栏，下次多写点东西再更新</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>这里起到一个公告栏的作用，不需要点进详情</p>
+<h1 id="125">12.5</h1>
+<p>使用 <a href="https://github.com/zhouyupeng/minHtml">minhtml</a> 来压缩所有代码，进一步加快访问速度，另外要写一篇文章来测试一下极端条件访问测试</p>
+<h1 id="1121">11.21</h1>
+<p>上传了我的维基，虽说是前年知道的 <strong>TiddlyWiki</strong>，但是现在才用😓<br>
+同时把它放到了菜单栏，下次多写点东西再更新</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[浅谈个人的博客写作的流程]]></title>
+        <id>https://1inn.now.sh/post/ge-ren-de-bo-ke-xie-zuo-de-liu-cheng/</id>
+        <link href="https://1inn.now.sh/post/ge-ren-de-bo-ke-xie-zuo-de-liu-cheng/">
+        </link>
+        <updated>2020-11-13T12:15:41.000Z</updated>
+        <summary type="html"><![CDATA[<p>简单记录和聊一聊一下本人的写作流程。关于写一篇博客文章的想法产生与最后的产出。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>简单记录和聊一聊一下本人的写作流程。关于写一篇博客文章的想法产生与最后的产出。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[使自己的博客具有国内国外镜像改善访客体验]]></title>
+        <id>https://1inn.now.sh/post/shi-zi-ji-de-bo-ke-ju-you-guo-nei-guo-wai-jing-xiang-gai-shan-fang-ke-ti-yan/</id>
+        <link href="https://1inn.now.sh/post/shi-zi-ji-de-bo-ke-ju-you-guo-nei-guo-wai-jing-xiang-gai-shan-fang-ke-ti-yan/">
+        </link>
+        <updated>2020-11-07T06:46:37.000Z</updated>
+        <summary type="html"><![CDATA[<p>让博客“同时”部署到 码云 和 Vercel。<br>
+本来是一整篇文章的，但是因为其中的部分可能对别人有用所以单独分离写了一篇文章《Gridea 临时支持 Gitee 的办法》。<br>
+具体实现方法看上面提到的文章，我简述一下不同之处</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>让博客“同时”部署到 码云 和 Vercel。<br>
+本来是一整篇文章的，但是因为其中的部分可能对别人有用所以单独分离写了一篇文章《Gridea 临时支持 Gitee 的办法》。<br>
+具体实现方法看上面提到的文章，我简述一下不同之处</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Gridea 支持 Gitee 的临时办法]]></title>
+        <id>https://1inn.now.sh/post/gridea-zhi-chi-gitee-de-ban-fa/</id>
+        <link href="https://1inn.now.sh/post/gridea-zhi-chi-gitee-de-ban-fa/">
+        </link>
+        <updated>2020-11-07T06:16:17.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>为了让小白也能理解，所以可能有些废话，请谅解。另外，其实不只是有一种方法<br>
+同时，<strong>Gitee个人版每次代码更新后网站是不会自动更新网站，需要手动刷新</strong>,请斟酌是否选择 Gitee</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>为了让小白也能理解，所以可能有些废话，请谅解。另外，其实不只是有一种方法<br>
+同时，<strong>Gitee个人版每次代码更新后网站是不会自动更新网站，需要手动刷新</strong>,请斟酌是否选择 Gitee</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[商务本娱乐用小记]]></title>
+        <id>https://1inn.now.sh/post/shang-wu-ben-yu-le-yong-zhi-lu/</id>
+        <link href="https://1inn.now.sh/post/shang-wu-ben-yu-le-yong-zhi-lu/">
+        </link>
+        <updated>2020-10-24T05:10:41.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>亲戚送了我一个笔记本，结果是商务本，比游戏本还贵，但显卡只有 1G 核显，很无语，明明跟他们说不要买商务本，商务本划不来，还是买了。最令人吐槽的是这个商务本没有usb接口，两个雷电加一个 Type-C,可坑惨我了，还得花钱买 Type-C 扩展坞（雷电扩展坞贵的要死，又加上雷电接口兼容 Type-C，所以只买了 Type-C 的，而且网上卖的主打雷电扩展的百元级扩展坞全是 Type-C ，营销手段没特别明说而已）</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>亲戚送了我一个笔记本，结果是商务本，比游戏本还贵，但显卡只有 1G 核显，很无语，明明跟他们说不要买商务本，商务本划不来，还是买了。最令人吐槽的是这个商务本没有usb接口，两个雷电加一个 Type-C,可坑惨我了，还得花钱买 Type-C 扩展坞（雷电扩展坞贵的要死，又加上雷电接口兼容 Type-C，所以只买了 Type-C 的，而且网上卖的主打雷电扩展的百元级扩展坞全是 Type-C ，营销手段没特别明说而已）</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[宿舍用品清单]]></title>
+        <id>https://1inn.now.sh/post/su-she-yong-pin-qing-dan/</id>
+        <link href="https://1inn.now.sh/post/su-she-yong-pin-qing-dan/">
+        </link>
+        <updated>2020-10-10T14:40:10.000Z</updated>
+        <summary type="html"><![CDATA[<p>记录一下简明的宿舍必备物品清单（对我而言），有一些是我还没有但是我看起来需要的。宿舍的物品一定要具备单人使用无烦恼，轻量、方便、不太占地方，毕竟宿舍不是你一个人住。然后这些物品都基本上不是小物件，比如牙刷毛巾啥的就不用都列出来了</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>记录一下简明的宿舍必备物品清单（对我而言），有一些是我还没有但是我看起来需要的。宿舍的物品一定要具备单人使用无烦恼，轻量、方便、不太占地方，毕竟宿舍不是你一个人住。然后这些物品都基本上不是小物件，比如牙刷毛巾啥的就不用都列出来了</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[整理 Kindle 工具清单]]></title>
+        <id>https://1inn.now.sh/post/zheng-li-kindle-gong-ju-qing-dan/</id>
+        <link href="https://1inn.now.sh/post/zheng-li-kindle-gong-ju-qing-dan/">
+        </link>
+        <updated>2020-08-30T07:48:36.000Z</updated>
+        <summary type="html"><![CDATA[<p>题外话：目前咪咕版的 Kindle 青春版（还是叫入门版？）二手售价有的低至180，所以关于经济的电纸书阅读器推荐的话，要么买二手咪咕版 Kindle，要么买京东、当当、小米、IReader这种牌子的价格500上下阅读器（当然要仔细辨别啊）。<br>
+下面是自己目前仍在用的 Kindle 工具清单。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>题外话：目前咪咕版的 Kindle 青春版（还是叫入门版？）二手售价有的低至180，所以关于经济的电纸书阅读器推荐的话，要么买二手咪咕版 Kindle，要么买京东、当当、小米、IReader这种牌子的价格500上下阅读器（当然要仔细辨别啊）。<br>
+下面是自己目前仍在用的 Kindle 工具清单。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[记一次使用Gitbook生成电子书（失败）]]></title>
+        <id>https://1inn.now.sh/post/ji-yi-ci-shi-yong-gitbook-sheng-cheng-dian-zi-shu/</id>
+        <link href="https://1inn.now.sh/post/ji-yi-ci-shi-yong-gitbook-sheng-cheng-dian-zi-shu/">
+        </link>
+        <updated>2020-08-26T04:23:22.000Z</updated>
+        <summary type="html"><![CDATA[<p>开始学 python 了，看到 Github 项目《Python语言基础50课》挺不错想下下来在 kindle 上看，可惜没有现成电子书，只有md文件和知乎专栏文章。于是第一次踩坑 gitbook，记录一下适合自己的操作步骤。</p>
+<blockquote>
+<p>请注意文章部分具有的时效性</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<p>开始学 python 了，看到 Github 项目《Python语言基础50课》挺不错想下下来在 kindle 上看，可惜没有现成电子书，只有md文件和知乎专栏文章。于是第一次踩坑 gitbook，记录一下适合自己的操作步骤。</p>
+<blockquote>
+<p>请注意文章部分具有的时效性</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[拼一个简单的博主状态指示器]]></title>
+        <id>https://1inn.now.sh/post/pin-yi-ge-jian-dan-de-bo-zhu-zhuang-tai-zhi-shi-qi/</id>
+        <link href="https://1inn.now.sh/post/pin-yi-ge-jian-dan-de-bo-zhu-zhuang-tai-zhi-shi-qi/">
+        </link>
+        <updated>2020-08-17T04:15:53.000Z</updated>
+        <summary type="html"><![CDATA[<p>博主状态指示器，可以作为博客存活确认、博主签名展示、或者博主状态显示来使用</p>
+<blockquote>
+<p>并不是网站服务器状态显示<br>
+多么质朴的封面啊！</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<p>博主状态指示器，可以作为博客存活确认、博主签名展示、或者博主状态显示来使用</p>
+<blockquote>
+<p>并不是网站服务器状态显示<br>
+多么质朴的封面啊！</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[分享我刷的一些网站]]></title>
+        <id>https://1inn.now.sh/post/fen-xiang-wo-shua-de-yi-xie-wang-zhan/</id>
+        <link href="https://1inn.now.sh/post/fen-xiang-wo-shua-de-yi-xie-wang-zhan/">
+        </link>
+        <updated>2020-07-31T04:14:42.000Z</updated>
+        <summary type="html"><![CDATA[<p>通常在这些网站上面找一些有趣的项目，比如软件啥的。发现一些好玩的、好用的，然后用起来。<br>
+一起来看吧 ：）</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>通常在这些网站上面找一些有趣的项目，比如软件啥的。发现一些好玩的、好用的，然后用起来。<br>
+一起来看吧 ：）</p>
+]]></content>
+    </entry>
+</feed>

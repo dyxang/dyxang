@@ -1,0 +1,41 @@
+name: 博客节点同步
+on: [push]
+jobs:
+  job1:
+    name: 先把国际节点的网址替换成国内节点的网址
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Find and Replace
+        uses: jacobtomlinson/gha-find-replace@master
+        with:
+          find: "1inn.now.sh"
+          replace: "dyxang.gitee.io"
+  job2:
+    needs: [job1]
+    name: 把该仓库同步到 Gitee（使用白名单只同步这个仓库）
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout source codes
+      uses: actions/checkout@v1
+    - name: Mirror Github to Gitee with white list
+      uses: Yikun/hub-mirror-action@master
+      with:
+        src: github/dyxang
+        dst: gitee/dyxang
+        dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
+        dst_token:  ${{ secrets.GITEE_TOKEN }}
+        white_list: "dyxang"
+        force_update: true
+        debug: true
+  job3:
+    needs: [job2]
+    name: 再重新把网址替换为原网址确保国际节点网站保持原样
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Find and Replace
+        uses: jacobtomlinson/gha-find-replace@master
+        with:
+          find: "dyxang.gitee.io"
+          replace: "1inn.now.sh"

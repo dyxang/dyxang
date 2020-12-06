@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://1inn.now.sh</id>
     <title>途读</title>
-    <updated>2020-12-06T03:42:12.796Z</updated>
+    <updated>2020-12-06T04:28:40.385Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://1inn.now.sh"/>
     <link rel="self" href="https://1inn.now.sh/atom.xml"/>
@@ -17,6 +17,8 @@
         </link>
         <updated>2020-11-21T12:04:33.000Z</updated>
         <summary type="html"><![CDATA[<p>这里起到一个公告栏的作用，不需要点进详情</p>
+<h1 id="126">12.6</h1>
+<p>因为有些改动，修正一些网站源码的错误</p>
 <h1 id="125">12.5</h1>
 <p>使用 <a href="https://github.com/zhouyupeng/minHtml">minhtml</a> 来压缩所有代码，进一步加快访问速度，另外要写一篇文章来测试一下极端条件访问测试</p>
 <h1 id="1121">11.21</h1>
@@ -24,6 +26,8 @@
 同时把它放到了菜单栏，下次多写点东西再更新</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>这里起到一个公告栏的作用，不需要点进详情</p>
+<h1 id="126">12.6</h1>
+<p>因为有些改动，修正一些网站源码的错误</p>
 <h1 id="125">12.5</h1>
 <p>使用 <a href="https://github.com/zhouyupeng/minHtml">minhtml</a> 来压缩所有代码，进一步加快访问速度，另外要写一篇文章来测试一下极端条件访问测试</p>
 <h1 id="1121">11.21</h1>

@@ -27,7 +27,6 @@ jobs:
         dst_token:  ${{ secrets.GITEE_TOKEN }}
         white_list: "dyxang"
         force_update: true
-        debug: true
   job3:
     needs: [job2]
     name: 再重新把网址替换为原网址确保国际节点网站保持原样

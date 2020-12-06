@@ -15959,7 +15959,7 @@ wikilist-button-foreground: #000</pre>
 <div bag="default" created="20201116132346266" creator="D" modified="20201116132347706" modifier="D'y'xang" revision="1" title="$:/status/UserName">
 <pre>Dyxang</pre>
 </div>
-<div created="20201205130934901" creator="Dyxang" list="[[Git 仓库的相关操作]] 引导页面" modified="20201205130934901" modifier="Dyxang" title="$:/StoryList">
+<div created="20201206034908347" creator="Dyxang" list="[[Git 仓库的相关操作]] 引导页面" modified="20201206034908347" modifier="Dyxang" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20201203142605223" creator="Dyxang" list="$:/core/ui/Buttons/more-tiddler-actions $:/core/ui/Buttons/info $:/core/ui/Buttons/new-here $:/core/ui/Buttons/new-journal-here $:/core/ui/Buttons/clone $:/core/ui/Buttons/export-tiddler $:/core/ui/Buttons/edit $:/core/ui/Buttons/open-window $:/core/ui/Buttons/delete $:/core/ui/Buttons/permalink $:/core/ui/Buttons/permaview $:/core/ui/Buttons/close-others $:/core/ui/Buttons/close $:/core/ui/Buttons/fold-others $:/core/ui/Buttons/fold $:/core/ui/Buttons/fold-bar" modified="20201203142605223" modifier="Dyxang" title="$:/tags/ViewToolbar">
@@ -20246,7 +20246,7 @@ select {
 
 {{$:/core/images/advanced-search-button}}</pre>
 </div>
-<div created="20201121071824318" creator="Dyxang" modified="20201205134514028" modifier="Dyxang" tags="git 命令行" title="Git 仓库的相关操作">
+<div created="20201121071824318" creator="Dyxang" modified="20201206035043092" modifier="Dyxang" tags="git 命令行" title="Git 仓库的相关操作">
 <pre>!! Git 全局设置:
 
 ```ps
@@ -20264,7 +20264,7 @@ touch README.md
 git add README.md
 git commit -m &quot;first commit&quot;
 git remote add origin https://example.com/username/repository.git
-git push -u origin master
+git push -u origin main
 
 ```
 
@@ -20298,7 +20298,10 @@ git remote remove [origin]
 //这个[origin]填仓库别名
 ```
 
-
+!! 强制推送
+```ps
+git push -f origin main
+```
 !! 报错：
 
 * `fatal: remote origin already exists.`

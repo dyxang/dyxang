@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://1inn.now.sh</id>
     <title>途读</title>
-    <updated>2020-12-06T04:28:40.385Z</updated>
+    <updated>2020-12-13T05:52:56.820Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://1inn.now.sh"/>
     <link rel="self" href="https://1inn.now.sh/atom.xml"/>
@@ -17,6 +17,12 @@
         </link>
         <updated>2020-11-21T12:04:33.000Z</updated>
         <summary type="html"><![CDATA[<p>这里起到一个公告栏的作用，不需要点进详情</p>
+<h1 id="1213">12.13</h1>
+<p>之后全是复习时间，31号放假后会要写的文章和计划</p>
+<ul>
+<li>《我为什么要选择 TiddlyWiki》（已有一千字左右纸质稿）</li>
+<li>《网站体验进一步优化》此处要<a href="https://alpaca.plus/">@羊驼哥</a>，提醒了我网站还有进一步改进空间🤔，而且上次那篇文章过后我也做出了一些改动，一直没写出来</li>
+</ul>
 <h1 id="126">12.6</h1>
 <p>因为有些改动，修正一些网站源码的错误</p>
 <h1 id="125">12.5</h1>
@@ -26,6 +32,12 @@
 同时把它放到了菜单栏，下次多写点东西再更新</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>这里起到一个公告栏的作用，不需要点进详情</p>
+<h1 id="1213">12.13</h1>
+<p>之后全是复习时间，31号放假后会要写的文章和计划</p>
+<ul>
+<li>《我为什么要选择 TiddlyWiki》（已有一千字左右纸质稿）</li>
+<li>《网站体验进一步优化》此处要<a href="https://alpaca.plus/">@羊驼哥</a>，提醒了我网站还有进一步改进空间🤔，而且上次那篇文章过后我也做出了一些改动，一直没写出来</li>
+</ul>
 <h1 id="126">12.6</h1>
 <p>因为有些改动，修正一些网站源码的错误</p>
 <h1 id="125">12.5</h1>

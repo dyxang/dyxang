@@ -28,7 +28,7 @@ jobs:
         debug: true
 </code></pre><p>然后再在本地存放博客的文件夹里的放上一个路径为 static/.github/workflows/main.yml 的同样文件（因为 Gridea在上传过程中会把原有仓库里的 main.yml 给删掉）。</p><ol><li>在 Gitee 上开启 pages 服务</li><li>到此，每当你在 Gridea 提交了”同步“，则 Github 会自动把仓库推送到 Gitee，然后需要你在Gitee 后台手动刷新<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup> Pages 服务<br><img src="https://pic.downk.cc/item/5fafb26d1cd1bbb86bf0daf9.png" alt="" loading="lazy"></li></ol><h2 id="提示">提示</h2><ul><li>文章具有时效性，可能后续 Gridea 会增加对 Gitee 的支持，或者文章中的语法、使用方式发生变化，操作中请结合具体实际情况作出改动。</li><li><strong>不要直接复制</strong> demo 里的 yml文件进行配置（里面有一个 uses: ./. 是相对路径），要看清楚</li><li>（1）的方法中，交给 Gitee 的是<strong>公钥</strong>（id_rsa.pub 文件全文），填到 Github 的是<strong>密钥</strong>（id_rsa 文件全文）</li></ul><h2 id="后记">后记</h2><p>真的不容易……以前根本没有详细了解 Github action，导致写配置文件的时候老是写错，写错又得看到底错在哪里，找文档和搜索引擎（这个阶段主要是因为我个人的独特需求导致的，详情请看下一篇文章），这一堆堆的报错通知啊……<br><img src="https://pic.downk.cc/item/5fa64f631cd1bbb86be3a972.png" alt="" loading="lazy"></p><hr class="footnotes-sep"><section class="footnotes"><ol class="footnotes-list"><li id="fn1" class="footnote-item"><p><a href="http://www.ruanyifeng.com/blog/2019/09/getting-started-with-github-actions.html">《Github Actions 入门教程》</a> <a href="#fnref1" class="footnote-backref">↩︎</a></p></li><li id="fn2" class="footnote-item"><p>项目地址 &gt; 服务 &gt; Gitee Pages &gt; 更新 <a href="#fnref2" class="footnote-backref">↩︎</a></p></li></ol></section></div><div class="toc-container"><ul class="markdownIt-TOC"><li><a href="#%E5%8F%AA%E5%9C%A8-gitee-%E4%B8%8A%E9%83%A8%E7%BD%B2">只在 Gitee 上部署</a><ul><li><a href="#%E5%87%86%E5%A4%87">准备</a></li><li><a href="#%E5%BC%80%E5%A7%8B">开始</a></li><li><a href="#%E6%8F%90%E7%A4%BA">提示</a></li><li><a href="#%E5%90%8E%E8%AE%B0">后记</a></li></ul></li></ul></div></div></article></div><div class="next-post"><div class="next">下一篇</div><a href="https://1inn.now.sh/post/shi-zi-ji-de-bo-ke-ju-you-guo-nei-guo-wai-jing-xiang-gai-shan-fang-ke-ti-yan/"><h3 class="post-title">使自己的博客具有国内国外镜像改善访客体验</h3></a></div><hr><div class="next-post"><div class="next">上一篇</div><a href="https://1inn.now.sh/post/shang-wu-ben-yu-le-yong-zhi-lu/"><h3 class="post-title">商务本娱乐用小记</h3></a></div><div id="talkmoe"></div><script type="text/javascript">loadComments();
 function loadComments() {
-  if (typeof Valine === 'undefined') {
+  if (typeof Waline === 'undefined') {
     var getScript = (options) => {
       var script = document.createElement('script');
       script.defer = true;
@@ -39,21 +39,20 @@ function loadComments() {
       document.body.appendChild(script);
     };
     getScript({
-      src: 'https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js',
+      src: 'https://cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js',
       onload: () => {
-        newValine();
+        newWaline();
       }
     });
   } else {
-    newValine();
+    newWaline();
   }
 }
-function newValine() {
-  new Valine({
+function newWaline() {
+  new Waline({
       el: '#talkmoe',
-      appId: 'TOr2oui8CqeHKy9pdTy1MRda-MdYXbMMI',
-      appKey: 'TM40Df21wNjaSXeCla4jVeNH',
-      placeholder:'Hello!留下你的足迹吧 ！（可直接在评论框内粘贴图片）',
+      serverURL: 'https://talk-pi.vercel.app/',
+      placeholder:'Hello!留下你的足迹吧 ！（评论通知若收不到请查看“垃圾邮件”分类，目前正在解决，可直接在评论框内粘贴图片）'
   });
 }</script><div class="site-footer webfont">坚持写作，源自二零一五<script src="https://cdn.jsdelivr.net/gh/instantpage/instant.page/instantpage.min.js"></script>&nbsp;<img alt="博客状态" src="https://img.shields.io/badge/dynamic/json?url=https://www.v2ex.com/api/members/show.json?username=dyxang&label=%E7%8A%B6%E6%80%81&query=$.bio&color=2edfa3&style=flat-square&colorA=0aa344">&nbsp; <a class="rss" rel="noreferrer" href="https://1inn.now.sh/atom.xml" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M3 3c9.941 0 18 8.059 18 18h-3c0-8.284-6.716-15-15-15V3zm0 7c6.075 0 11 4.925 11 11h-3a8 8 0 0 0-8-8v-3zm0 7a4 4 0 0 1 4 4H3v-4z"/></svg> RSS</a></div></div></div><script>hljs.initHighlightingOnLoad()
 

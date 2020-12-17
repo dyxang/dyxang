@@ -6,7 +6,7 @@
 </code></pre><center><img style="border-radius:.3125em;box-shadow:0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08)" src="https://i.loli.net/2020/05/03/DUAHmPRoj1x9FKy.png"><br><div style="color:orange;border-bottom:1px solid #d9d9d9;display:inline-block;color:#999;padding:2px">使用懒加载后的谷歌字体载入速度，来自网络</div></center><p>当然，若仅仅想让固定的一段文字渲染成网络字体，可以试试 Iconfont 的 <a href="https://www.iconfont.cn/webfont">webfont服务</a></p><h1 id="扩展改造项目">扩展改造项目</h1><p>以下内容适用于对速度极其追求的人</p><h2 id="修改网站上的图标">修改网站上的图标</h2><p>如果你的网站所用的图标并不算多，推荐使用 svg 代码代替引用外部资源，例如在 <a href="https://remixicon.com/">Remix Icon</a> 官网中就可以直接复制 svg 代码。把代码粘贴到需要展示的位置即可</p><center><img style="border-radius:.3125em;box-shadow:0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08)" src="https://i.loli.net/2020/05/03/CPErRJbMtGsFiOV.png"><br><div style="color:orange;border-bottom:1px solid #d9d9d9;display:inline-block;color:#999;padding:2px">Remixicon</div></center><h2 id="instantpage">instant.page</h2><p>很多浏览器都有“智能预加载”的设置，原理就是提前加载鼠标点击/悬停着的链接，减少人为的点击延迟，达到加速的效果，而 <a href="https://instant.page/">instant.page</a> 就是这么一个网站预加载的脚本。只要在一个链接上犹豫超过超过 65ms，开始预加载，当然相对的流量也会增多。</p><center><img style="border-radius:.3125em;box-shadow:0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08)" src="https://i.loli.net/2020/05/03/J75tX3iwFcoDkas.png"><br><div style="color:orange;border-bottom:1px solid #d9d9d9;display:inline-block;color:#999;padding:2px">很多著名网站也在使用</div></center><p>这里推荐使用 <a href="https://www.jsdelivr.com/package/gh/instantpage/instant.page">JsDelivr</a> 的 CDN 而不是官方的，原因是官方使用 Cloudflare Workers（无国内节点）。粘贴以下内容到<code>&lt;body&gt;</code>标签前即可。</p><pre><code class="language-js">&lt;script src=&quot;https://cdn.jsdelivr.net/gh/instantpage/instant.page@3.0.0/instantpage.min.js&quot;&gt;&lt;/script&gt;
 </code></pre><h2 id="代码压缩">代码压缩</h2><p>通过压缩代码减少换行可以节省浏览器的读取时间，而我使用的是 OSChina 的在线压缩，最好把 html css javascript 分开压缩，避免一些极限压缩对代码完整性的破坏。一定要在所有改造工作做完后进行压缩，并且要留一份压缩前的备份。</p><center><img style="border-radius:.3125em;box-shadow:0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08)" src="https://i.loli.net/2020/05/03/NDiIlPwtjKnTmqZ.png"><br><div style="color:orange;border-bottom:1px solid #d9d9d9;display:inline-block;color:#999;padding:2px">OSCHINA</div></center><h2 id="service-worker">Service Worker</h2><p>作为支撑 PWA（渐进式 Web 应用）的一部分，我们只需要了解，给网站加上 Service Worker，就相当于告诉访客的浏览器“这个网站的 XXX 文件需要一直缓存”，只要访客不清除浏览器的数据，下次访问你的网站时 XXX 文件直接从本地载入，大大提高速度。关于配置，可以看延伸文章 <a href="https://wangdaodao.com/20190111/service-worker.html">《给博客加上Service Worker》</a></p><h1 id="改造收尾的验收">改造收尾的验收</h1><p>改造完成后，使用谷歌 <a href="https://developers.google.com/speed/pagespeed/insights/?hl=zh-cn">PageSpeed Insights</a> 来给网站诊断（还能提出改进建议），或者在电脑端浏览器按 F12 打开控制台&gt;性能来查看网站速度。</p><center><img style="border-radius:.3125em;box-shadow:0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08)" src="https://i.loli.net/2020/05/03/YHKg9Dbfe52w1yU.png"><br><div style="color:orange;border-bottom:1px solid #d9d9d9;display:inline-block;color:#999;padding:2px">PageSpeed Insights 给我的博客评分</div></center><center><img style="border-radius:.3125em;box-shadow:0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08)" src="https://i.loli.net/2020/05/03/zUditqZx9XM72RP.png"><br><div style="color:orange;border-bottom:1px solid #d9d9d9;display:inline-block;color:#999;padding:2px">进入控制台进行测试</div></center><center><img style="border-radius:.3125em;box-shadow:0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08)" src="https://i.loli.net/2020/05/03/5G723jWYvBXDgHE.png"><br><div style="color:orange;border-bottom:1px solid #d9d9d9;display:inline-block;color:#999;padding:2px">测试结果</div></center></div><div class="toc-container"><ul class="markdownIt-TOC"><li><a href="#dns-%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90%E6%9C%8D%E5%8A%A1">DNS 域名解析服务</a></li><li><a href="#%E5%89%8D%E7%AB%AF%E5%85%AC%E5%85%B1%E5%BA%93-cdn">前端公共库 CDN</a></li><li><a href="#%E5%BC%82%E6%AD%A5%E5%8A%A0%E8%BD%BD-%E6%87%92%E5%8A%A0%E8%BD%BD">异步加载、懒加载</a><ul><li><a href="#%E8%84%9A%E6%9C%AC%E6%96%87%E4%BB%B6%E5%BC%82%E6%AD%A5%E5%8A%A0%E8%BD%BD">脚本文件异步加载</a></li><li><a href="#%E5%AA%92%E4%BD%93%E8%B5%84%E6%BA%90%E6%87%92%E5%8A%A0%E8%BD%BD">媒体资源懒加载</a></li></ul></li><li><a href="#%E6%89%A9%E5%B1%95%E6%94%B9%E9%80%A0%E9%A1%B9%E7%9B%AE">扩展改造项目</a><ul><li><a href="#%E4%BF%AE%E6%94%B9%E7%BD%91%E7%AB%99%E4%B8%8A%E7%9A%84%E5%9B%BE%E6%A0%87">修改网站上的图标</a></li><li><a href="#instantpage">instant.page</a></li><li><a href="#%E4%BB%A3%E7%A0%81%E5%8E%8B%E7%BC%A9">代码压缩</a></li><li><a href="#service-worker">Service Worker</a></li></ul></li><li><a href="#%E6%94%B9%E9%80%A0%E6%94%B6%E5%B0%BE%E7%9A%84%E9%AA%8C%E6%94%B6">改造收尾的验收</a></li></ul></div></div></article></div><div class="next-post"><div class="next">下一篇</div><a href="https://1inn.now.sh/post/bo-ke-gai-dong-yu-zhi-hou-de-shi-qing/"><h3 class="post-title">博客改动与之后的事情</h3></a></div><hr><div class="next-post"><div class="next">上一篇</div><a href="https://1inn.now.sh/post/fang-ke-bi-du-qian-yi-dao-liao-github/"><h3 class="post-title">【访客必读】迁移到了Github</h3></a></div><div id="talkmoe"></div><script type="text/javascript">loadComments();
 function loadComments() {
-  if (typeof Valine === 'undefined') {
+  if (typeof Waline === 'undefined') {
     var getScript = (options) => {
       var script = document.createElement('script');
       script.defer = true;
@@ -17,21 +17,20 @@ function loadComments() {
       document.body.appendChild(script);
     };
     getScript({
-      src: 'https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js',
+      src: 'https://cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js',
       onload: () => {
-        newValine();
+        newWaline();
       }
     });
   } else {
-    newValine();
+    newWaline();
   }
 }
-function newValine() {
-  new Valine({
+function newWaline() {
+  new Waline({
       el: '#talkmoe',
-      appId: 'TOr2oui8CqeHKy9pdTy1MRda-MdYXbMMI',
-      appKey: 'TM40Df21wNjaSXeCla4jVeNH',
-      placeholder:'Hello!留下你的足迹吧 ！（可直接在评论框内粘贴图片）',
+      serverURL: 'https://talk-pi.vercel.app/',
+      placeholder:'Hello!留下你的足迹吧 ！（评论通知若收不到请查看“垃圾邮件”分类，目前正在解决，可直接在评论框内粘贴图片）'
   });
 }</script><div class="site-footer webfont">坚持写作，源自二零一五<script src="https://cdn.jsdelivr.net/gh/instantpage/instant.page/instantpage.min.js"></script>&nbsp;<img alt="博客状态" src="https://img.shields.io/badge/dynamic/json?url=https://www.v2ex.com/api/members/show.json?username=dyxang&label=%E7%8A%B6%E6%80%81&query=$.bio&color=2edfa3&style=flat-square&colorA=0aa344">&nbsp; <a class="rss" rel="noreferrer" href="https://1inn.now.sh/atom.xml" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M3 3c9.941 0 18 8.059 18 18h-3c0-8.284-6.716-15-15-15V3zm0 7c6.075 0 11 4.925 11 11h-3a8 8 0 0 0-8-8v-3zm0 7a4 4 0 0 1 4 4H3v-4z"/></svg> RSS</a></div></div></div><script>hljs.initHighlightingOnLoad()
 

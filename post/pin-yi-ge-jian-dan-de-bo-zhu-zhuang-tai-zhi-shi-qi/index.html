@@ -21,7 +21,7 @@
 }
 </code></pre><p>第三步，打开 <a href="https://shields.io/">Shields.io</a> ，翻到 Dynamic（如图二） 。从左至右依次是：数据类型 | 牌牌标签 | API地址 | 标签颜色 | 内容前缀 | 内容后缀。<br><img src="https://i.loli.net/2020/08/31/JLQb8ejV26Czvio.png" alt="" loading="lazy"><br>这样说不太直观，参照第二步我已知的数据：</p><ol><li>data type，因为是 json 文件，所以选 json</li><li>label， 我想展示的是状态，那么填“状态”</li><li>data url，填入 <code>https://www.v2ex.com/api/members/show.json?username=我的用户名</code></li><li>query，展示其中的 bio 字段 ，则填 <code>$.bio</code>。</li><li>color，填十六进制的颜色代码，我选择浅蓝色 <code>9cf</code>，若是在别的地方查询到的代码带有 # 号，请去掉。</li><li>prefix/suffix，是前缀，为了举例子，我分别填“现在是”和“的心情”。</li><li>点击 Make Badge ，成果如下图，注意这里的下图是静态标签，不过照着这个步骤来也是这样的显示效果，在此文中做成静态只是方便我展示。</li><li>有各种标签样式，用法与外观详见 Shields.io 的官网 Styles 一栏，可高度自定义。这里有现成的<a href="https://www.dazhuanlan.com/2020/01/29/5e31a83e30b5c/">中文版用法</a>，<strong>注意除第一个字段用问号连接外，其余字段都需用 &amp; 连接。</strong><br><img src="https://img.shields.io/badge/%E7%8A%B6%E6%80%81-%E7%8E%B0%E5%9C%A8%E6%98%AF%E6%83%B3%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%BF%83%E6%83%85-9cf" alt="" loading="lazy"></li></ol><h1 id="结束">结束</h1><p>其实还有我提到过的玩法，比如有时你长时间不想写文章但是又想证明你还活着，你可以生成一个“博客主在 几年几月几日 曾经来过”的标签。也可以动态更新签名、心情之类。有一个动态小牌子项目，支持哔哩哔哩、酷安、知乎、微博等平台数据展示，这是 <a href="https://github.com/spencerwooo/Substats#supported-services">Github 项目地址</a>，配色？我用的<a href="https://colors.ichuantong.cn/">这个</a>。</p></div><div class="toc-container"><ul class="markdownIt-TOC"><li><a href="#%E5%87%86%E5%A4%87%E4%B8%80%E4%B8%8B">准备一下</a></li><li><a href="#%E7%AE%80%E5%8D%95%E8%AF%B4%E4%B8%80%E4%B8%8B%E6%80%8E%E4%B9%88%E7%94%A8">简单说一下怎么用</a></li><li><a href="#%E5%BC%80%E5%A7%8B%E7%BC%9D%E5%90%88">开始缝合</a></li><li><a href="#%E7%BB%93%E6%9D%9F">结束</a></li></ul></div></div></article></div><div class="next-post"><div class="next">下一篇</div><a href="https://1inn.now.sh/post/ji-yi-ci-shi-yong-gitbook-sheng-cheng-dian-zi-shu/"><h3 class="post-title">记一次使用Gitbook生成电子书（失败）</h3></a></div><hr><div class="next-post"><div class="next">上一篇</div><a href="https://1inn.now.sh/post/fen-xiang-wo-shua-de-yi-xie-wang-zhan/"><h3 class="post-title">分享我刷的一些网站</h3></a></div><div id="talkmoe"></div><script type="text/javascript">loadComments();
 function loadComments() {
-  if (typeof Valine === 'undefined') {
+  if (typeof Waline === 'undefined') {
     var getScript = (options) => {
       var script = document.createElement('script');
       script.defer = true;
@@ -32,21 +32,20 @@ function loadComments() {
       document.body.appendChild(script);
     };
     getScript({
-      src: 'https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js',
+      src: 'https://cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js',
       onload: () => {
-        newValine();
+        newWaline();
       }
     });
   } else {
-    newValine();
+    newWaline();
   }
 }
-function newValine() {
-  new Valine({
+function newWaline() {
+  new Waline({
       el: '#talkmoe',
-      appId: 'TOr2oui8CqeHKy9pdTy1MRda-MdYXbMMI',
-      appKey: 'TM40Df21wNjaSXeCla4jVeNH',
-      placeholder:'Hello!留下你的足迹吧 ！（可直接在评论框内粘贴图片）',
+      serverURL: 'https://talk-pi.vercel.app/',
+      placeholder:'Hello!留下你的足迹吧 ！（评论通知若收不到请查看“垃圾邮件”分类，目前正在解决，可直接在评论框内粘贴图片）'
   });
 }</script><div class="site-footer webfont">坚持写作，源自二零一五<script src="https://cdn.jsdelivr.net/gh/instantpage/instant.page/instantpage.min.js"></script>&nbsp;<img alt="博客状态" src="https://img.shields.io/badge/dynamic/json?url=https://www.v2ex.com/api/members/show.json?username=dyxang&label=%E7%8A%B6%E6%80%81&query=$.bio&color=2edfa3&style=flat-square&colorA=0aa344">&nbsp; <a class="rss" rel="noreferrer" href="https://1inn.now.sh/atom.xml" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M3 3c9.941 0 18 8.059 18 18h-3c0-8.284-6.716-15-15-15V3zm0 7c6.075 0 11 4.925 11 11h-3a8 8 0 0 0-8-8v-3zm0 7a4 4 0 0 1 4 4H3v-4z"/></svg> RSS</a></div></div></div><script>hljs.initHighlightingOnLoad()
 

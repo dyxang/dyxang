@@ -25,7 +25,7 @@ deb http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ jessie main non-free 
 deb-src http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ jessie main non-free contrib
 </code></pre><p><small>于4月重发<small></small></small></p></div><div class="toc-container"><ul class="markdownIt-TOC"><li><a href="#%E6%94%AF%E6%8C%81%E4%B8%AD%E6%96%87%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE">支持中文相关配置</a></li><li><a href="#%E5%AE%89%E8%A3%85%E8%BE%93%E5%85%A5%E6%B3%95">安装输入法</a></li><li><a href="#configtxt%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE">config.txt相关配置</a></li></ul></div></div></article></div><div class="next-post"><div class="next">下一篇</div><a href="https://1inn.now.sh/post/5/"><h3 class="post-title">你以为你是谁，你以为你会是谁？</h3></a></div><hr><div class="next-post"><div class="next">上一篇</div><a href="https://1inn.now.sh/post/3/"><h3 class="post-title">碎语</h3></a></div><div id="talkmoe"></div><script type="text/javascript">loadComments();
 function loadComments() {
-  if (typeof Valine === 'undefined') {
+  if (typeof Waline === 'undefined') {
     var getScript = (options) => {
       var script = document.createElement('script');
       script.defer = true;
@@ -36,21 +36,20 @@ function loadComments() {
       document.body.appendChild(script);
     };
     getScript({
-      src: 'https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js',
+      src: 'https://cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js',
       onload: () => {
-        newValine();
+        newWaline();
       }
     });
   } else {
-    newValine();
+    newWaline();
   }
 }
-function newValine() {
-  new Valine({
+function newWaline() {
+  new Waline({
       el: '#talkmoe',
-      appId: 'TOr2oui8CqeHKy9pdTy1MRda-MdYXbMMI',
-      appKey: 'TM40Df21wNjaSXeCla4jVeNH',
-      placeholder:'Hello!留下你的足迹吧 ！（可直接在评论框内粘贴图片）',
+      serverURL: 'https://talk-pi.vercel.app/',
+      placeholder:'Hello!留下你的足迹吧 ！（评论通知若收不到请查看“垃圾邮件”分类，目前正在解决，可直接在评论框内粘贴图片）'
   });
 }</script><div class="site-footer webfont">坚持写作，源自二零一五<script src="https://cdn.jsdelivr.net/gh/instantpage/instant.page/instantpage.min.js"></script>&nbsp;<img alt="博客状态" src="https://img.shields.io/badge/dynamic/json?url=https://www.v2ex.com/api/members/show.json?username=dyxang&label=%E7%8A%B6%E6%80%81&query=$.bio&color=2edfa3&style=flat-square&colorA=0aa344">&nbsp; <a class="rss" rel="noreferrer" href="https://1inn.now.sh/atom.xml" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M3 3c9.941 0 18 8.059 18 18h-3c0-8.284-6.716-15-15-15V3zm0 7c6.075 0 11 4.925 11 11h-3a8 8 0 0 0-8-8v-3zm0 7a4 4 0 0 1 4 4H3v-4z"/></svg> RSS</a></div></div></div><script>hljs.initHighlightingOnLoad()
 

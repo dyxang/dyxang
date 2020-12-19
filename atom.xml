@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://1inn.now.sh</id>
     <title>途读</title>
-    <updated>2020-12-13T05:52:56.820Z</updated>
+    <updated>2020-12-19T10:26:10.229Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://1inn.now.sh"/>
     <link rel="self" href="https://1inn.now.sh/atom.xml"/>
@@ -10,6 +10,23 @@
     <logo>https://1inn.now.sh/images/avatar.png</logo>
     <icon>https://1inn.now.sh/favicon.ico</icon>
     <rights>All rights reserved 2020, 途读</rights>
+    <entry>
+        <title type="html"><![CDATA[因安全问题评论系统迁移至 Waline]]></title>
+        <id>https://1inn.now.sh/post/an-quan-wen-ti-ping-lun-xi-tong-qian-yi-zhi-waline/</id>
+        <link href="https://1inn.now.sh/post/an-quan-wen-ti-ping-lun-xi-tong-qian-yi-zhi-waline/">
+        </link>
+        <updated>2020-12-17T04:43:24.000Z</updated>
+        <summary type="html"><![CDATA[<p>没错，只多一个<code>V</code>的评论系统 Waline，你会发现除了评论框下的 V 变成了 W，以及版本号变了外，其他几乎没变，当然，除了更加安全</p>
+<blockquote>
+<p>双倍 V，更加安全</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<p>没错，只多一个<code>V</code>的评论系统 Waline，你会发现除了评论框下的 V 变成了 W，以及版本号变了外，其他几乎没变，当然，除了更加安全</p>
+<blockquote>
+<p>双倍 V，更加安全</p>
+</blockquote>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[最新情况]]></title>
         <id>https://1inn.now.sh/post/zui-xin-qing-kuang/</id>
@@ -81,12 +98,12 @@
         <updated>2020-11-07T06:16:17.000Z</updated>
         <summary type="html"><![CDATA[<blockquote>
 <p>为了让小白也能理解，所以可能有些废话，请谅解。另外，其实不只是有一种方法<br>
-同时，<strong>Gitee个人版每次代码更新后网站是不会自动更新网站，需要手动刷新</strong>,请斟酌是否选择 Gitee</p>
+同时，<strong>Gitee个人版每次代码更新后网站是不会自动更新网站，<s>需要手动刷新,请斟酌是否选择 Gitee</s></strong>，解决办法[^way]</p>
 </blockquote>
 ]]></summary>
         <content type="html"><![CDATA[<blockquote>
 <p>为了让小白也能理解，所以可能有些废话，请谅解。另外，其实不只是有一种方法<br>
-同时，<strong>Gitee个人版每次代码更新后网站是不会自动更新网站，需要手动刷新</strong>,请斟酌是否选择 Gitee</p>
+同时，<strong>Gitee个人版每次代码更新后网站是不会自动更新网站，<s>需要手动刷新,请斟酌是否选择 Gitee</s></strong>，解决办法[^way]</p>
 </blockquote>
 ]]></content>
     </entry>
@@ -155,27 +172,14 @@
         <summary type="html"><![CDATA[<p>博主状态指示器，可以作为博客存活确认、博主签名展示、或者博主状态显示来使用</p>
 <blockquote>
 <p>并不是网站服务器状态显示<br>
-多么质朴的封面啊！</p>
+可以在“关于我”查看效果</p>
 </blockquote>
 ]]></summary>
         <content type="html"><![CDATA[<p>博主状态指示器，可以作为博客存活确认、博主签名展示、或者博主状态显示来使用</p>
 <blockquote>
 <p>并不是网站服务器状态显示<br>
-多么质朴的封面啊！</p>
+可以在“关于我”查看效果</p>
 </blockquote>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[分享我刷的一些网站]]></title>
-        <id>https://1inn.now.sh/post/fen-xiang-wo-shua-de-yi-xie-wang-zhan/</id>
-        <link href="https://1inn.now.sh/post/fen-xiang-wo-shua-de-yi-xie-wang-zhan/">
-        </link>
-        <updated>2020-07-31T04:14:42.000Z</updated>
-        <summary type="html"><![CDATA[<p>通常在这些网站上面找一些有趣的项目，比如软件啥的。发现一些好玩的、好用的，然后用起来。<br>
-一起来看吧 ：）</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>通常在这些网站上面找一些有趣的项目，比如软件啥的。发现一些好玩的、好用的，然后用起来。<br>
-一起来看吧 ：）</p>
 ]]></content>
     </entry>
 </feed>

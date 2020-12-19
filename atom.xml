@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://1inn.now.sh</id>
     <title>途读</title>
-    <updated>2020-12-19T15:00:11.295Z</updated>
+    <updated>2020-12-19T15:54:59.648Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://1inn.now.sh"/>
     <link rel="self" href="https://1inn.now.sh/atom.xml"/>
@@ -25,6 +25,15 @@
 <blockquote>
 <p>双倍 V，更加安全</p>
 </blockquote>
+<!-- more -->
+<p>我是一直都不知道 valine 有根本上的安全问题的，直到我看到 waline ，一款从 Valine 衍生的带后端评论系统 。他在<a href="https://waline.js.org/why">这个页面</a>里列出了 Valine 的几个问题</p>
+<ul>
+<li>XSS 安全</li>
+<li>隐私泄露</li>
+<li>阅读统计篡改</li>
+</ul>
+<p>附带一篇文章，<a href="https://ttys3.net/post/hugo/please-stop-using-valine-js-comment-system-until-it-fixed-the-privacy-leaking-problem/">《请马上停止使用Valine.js评论系统，除非它修复了用户隐私泄露问题》</a>。我仔细阅读了文章，由此决定立即迁移。按照 Waline 文档的 <strong>Valine 迁移指南</strong> 部分迁移成功，同时再按照 <code>配置&gt;服务端&gt;评论通知</code> 在 Vercel 增加了相关变量，至此迁移成功！<br>
+同时更改发件邮箱，看能不能避免被纳入垃圾邮件的问题，这个项目也是刚刚启动中，所以评论后是全局刷新，后续应该会有 ajax</p>
 ]]></content>
     </entry>
     <entry>
@@ -62,6 +71,7 @@
 <h1 id="1121">11.21</h1>
 <p>上传了我的维基，虽说是前年知道的 <strong>TiddlyWiki</strong>，但是现在才用😓<br>
 同时把它放到了菜单栏，下次多写点东西再更新</p>
+<!-- more -->
 ]]></content>
     </entry>
     <entry>
@@ -73,6 +83,33 @@
         <summary type="html"><![CDATA[<p>简单记录和聊一聊一下本人的写作流程。关于写一篇博客文章的想法产生与最后的产出。</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>简单记录和聊一聊一下本人的写作流程。关于写一篇博客文章的想法产生与最后的产出。</p>
+<!-- more -->
+<h2 id="定题与选择">定题与选择</h2>
+<p>定题通常是在在我浏览一些文章<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>，或者在生活中有什么感触时头脑中会有一个大致想法，通常灵感来源是前一种（浏览我的博客你会发现关于现实生活的文章很少）。然后我的习惯是不写到纸上，而是直接打开电脑，如今我的文本编辑器不是什么 Markdown 编辑器，而是 Visual Code，加上一个支持 Markdown 的扩展，毫不夸张地说，VS 已经相当一个公文包了，啥都能做（对我而言）。</p>
+<h2 id="大纲与思维导图">大纲与思维导图</h2>
+<p>然后以我个人比较随意的性格，可能在选择素材或者细方向这个步骤上，是与写作平行的，是的，我习惯边写边收集素材。通常都是文本编辑器+浏览器的形式。<br>
+当然现在我可能会在写的时候写个大纲，也就是大标题的形式而已，算是认识到大纲的重要性和写作要有起码的规范这两条“规矩”吧,整理出来的大纲/导图也可以作为一些攻略文章的配图直接贴出来，方便读者看清思路和流程。生成精美思维导图、流程图的网站比比皆是，所以不用我介绍了。</p>
+<h2 id="一口气写完吧">一口气写完吧</h2>
+<p>我的写作流最大的特点可能就是，要么不写，要么一口气写完（大部分）。马不停蹄，马拉松式写作。有时候，别人写一个攻略啥的都是先做了一边然后再写成文章，我通常是边写边做，写着写着顺便把问题解决了（或者我被问题解决，然后放弃谋篇文章再也不写）。这时候很需要注意自己的写作环境，好的写作环境会让你有更大的写作动力与效率。桌椅是否合适？你的写作设备是否合手？写作工具的颜值/设计让你有写作动力吗？等等问题。<br>
+在写作过程中的检查也是必要的一环，我通常是边写边检查，写完再检查一遍。</p>
+<h2 id="文章配图与封面">文章配图与封面</h2>
+<p>配图我也是边写边截图/制作然后直接上传到图床，因为我认为如果在写作过程中直接插入配图（不是那种图文无关的图），可以让文章写时看起来更完整些，方便调整。封面是我写完后若是文章主题范围大就在无版权网站上（比如 Unsplash<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup> ）找一张，若是能在能力范围内就自己制作封面，这也是我今后的打算。</p>
+<h2 id="检查-检查-还是检查">检查、检查、还是检查</h2>
+<p>写完后检查排版、格式是否正确显示，检查错字漏字，检查语法错误，可以用一些语法检查网站辅助检查一下。有些工具可以看看这篇文章<sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup>，很多工具也是在我刷的网站里可以搜索到的。</p>
+<blockquote>
+<p>碎碎念，稍微改动了下博客，以及删了一些内容，还加了赞赏码。</p>
+</blockquote>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p><a href="./fen-xiang-wo-shua-de-yi-xie-wang-zhan/">《分享我刷的一些网站》</a> <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p><a href="https://unsplash.dogedoge.com/">Unsplash 镜像站</a> <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn3" class="footnote-item"><p><a href="https://sspai.com/post/58672">《写作新人初长成，我有这些心得想与你分享》</a> <a href="#fnref3" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
 ]]></content>
     </entry>
     <entry>
@@ -88,6 +125,59 @@
         <content type="html"><![CDATA[<p>让博客“同时”部署到 码云 和 Vercel。<br>
 本来是一整篇文章的，但是因为其中的部分可能对别人有用所以单独分离写了一篇文章《Gridea 临时支持 Gitee 的办法》。<br>
 具体实现方法看上面提到的文章，我简述一下不同之处</p>
+<!-- more -->
+<p>国际节点我选的是 Vercel ，通过导入 Github的仓库来部署网站，与仓库同步更新，与 Github Pages不同，有世界各地的 CDN 支持，包括亚洲也很有几个CDN边缘服务器（台湾、香港、日本、韩国等）,速度没得说。<br>
+国内节点我选的是 Gitee，虽然 Coding 挺不错（属于腾讯），但是提供的二级域名是随机的长字符串，不方便记忆且我自己没有买域名的打算，再加上双方的免费版我测出的 ip不同，码云的来自上海，Coding 来自新加坡<br>
+我目前正在用的博客系统是 Gridea，不支持直接部署到Gitee，也不支持同时部署到两个平台，最关键的一点是 Gridea 要填自己的博客网址，也就是说 我同步到 Vercel（1inn.now.sh）上后，还得本地把网站文件中所有<code>1inn.now.sh</code>替换成<code>dyxang.gitee.io</code>，再同步到 Gitee（dyxang.gitee.io）。所以在一次次这种繁琐的操作后，我烦躁了，然后花了半天时间完成解决办法。<br>
+具体流程如下<br>
+<img src="https://pic.downk.cc/item/5fa653d41cd1bbb86be49331.png" alt="" loading="lazy"><br>
+我的 Github Action 文件：</p>
+<pre><code class="language-yaml">name: 博客节点同步
+on: [push]
+//如要使用请移除注释
+jobs:
+  job1:
+    name: 先把国际节点的网址替换成国内节点的网址
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Find and Replace
+        uses: jacobtomlinson/gha-find-replace@master
+        with:
+          find: &quot;1inn.now.sh&quot;
+          replace: &quot;dyxang.gitee.io&quot;
+          //这里使用的是全文替换的 Action
+  job2:
+    needs: [job1]
+    //needs 的意思是当 job1 完成后再进行 job2，不加 needs 则三个任务同时进行，会出错/超时 等等问题
+    name: 把该仓库同步到 Gitee（使用白名单只同步这个仓库）
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout source codes
+      uses: actions/checkout@v1
+    - name: Mirror Github to Gitee with white list
+      uses: Yikun/hub-mirror-action@master
+      with:
+        src: github/dyxang
+        dst: gitee/dyxang
+        dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
+        dst_token:  ${{ secrets.GITEE_TOKEN }}
+        white_list: &quot;dyxang&quot;
+        force_update: true
+        debug: true
+  job3:
+    needs: [job2]
+    name: 再重新把网址替换为原网址确保国际节点网站保持原样
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Find and Replace
+        uses: jacobtomlinson/gha-find-replace@master
+        with:
+          find: &quot;dyxang.gitee.io&quot;
+          replace: &quot;1inn.now.sh&quot;
+//把 Github 仓库文件还原，让 Vercel 部署时正常使用
+</code></pre>
 ]]></content>
     </entry>
     <entry>
@@ -103,8 +193,73 @@
 ]]></summary>
         <content type="html"><![CDATA[<blockquote>
 <p>为了让小白也能理解，所以可能有些废话，请谅解。另外，其实不只是有一种方法<br>
-同时，<strong>Gitee个人版每次代码更新后网站是不会自动更新网站，<s>需要手动刷新,请斟酌是否选择 Gitee</s></strong>，解决办法[^way]</p>
+同时，<strong>Gitee个人版每次代码更新后网站是不会自动更新网站，<s>需要手动刷新,请斟酌是否选择 Gitee</s></strong>，解决办法<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup></p>
 </blockquote>
+<!-- more -->
+<h1 id="只在-gitee-上部署">只在 Gitee 上部署</h1>
+<h2 id="准备">准备</h2>
+<p>首先你需要具有</p>
+<ul>
+<li>懂得 Github /Github Actions 基础操作<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup></li>
+<li>有一个 Github 账号</li>
+<li>已经配置好了 Gridea，并能把博客同步到一个 Github 上与你的 Gitee 用户名同名的仓库 ，（例子：github/sample/sample）</li>
+</ul>
+<p>注：Gitee 与 Github 不同的是，Gitee 上名为<code>dyxang</code>的仓库开启网站托管后网址是<code>dyxang.gitee.io</code>， 而  Github 上是名为<code>dyxang.github.io</code>的仓库开启网站托管网址才是 <code>dyxang.github.io</code>。</p>
+<h2 id="开始">开始</h2>
+<ol>
+<li>阅读一下<a href="https://github.com/Yikun/hub-mirror-action">这个项目</a>，如果感觉自己能行，那么可以跳过以下所有步骤自己来动手</li>
+<li>照着 （1）中的“参数详解”标题下的小标题中“必选参数 dst_key 与 dst_token”来设置，获取到三个数值，<strong>ssh 公钥、ssh 密钥、Gitee 的API tokens</strong></li>
+<li>把 <strong>ssh 公钥</strong> 填到 Gitee 的 设置&gt;安全设置&gt;SSH公钥</li>
+<li>在 Github 的同名仓库的 Settings&gt;Secrets 下，新建 GITEE_PRIVATE_KEY、GITEE_TOKEN，分别填入 <strong>ssh 密钥</strong>与 <strong>Gitee 的API tokens</strong></li>
+<li>在仓库中选择 Actions&gt;New workflow ，然后点 Skip this and set up a workflow yourself 新建 main.yml 文件<br>
+关于 yml 文件的内容可以直接用我已经设置好的：</li>
+</ol>
+<pre><code>on: push
+name: Github 同步到 Gitee
+jobs:
+  run:
+    name: 把该仓库同步到 Gitee（使用白名单只同步这个仓库）
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout source codes
+      uses: actions/checkout@v1
+    - name: Mirror Github to Gitee with white list
+      uses: Yikun/hub-mirror-action@master
+      with:
+        src: github/你的用户名
+        dst: gitee/你的用户名
+        dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
+        dst_token:  ${{ secrets.GITEE_TOKEN }}
+        white_list: &quot;你的用户名&quot;
+        force_update: true
+        debug: true
+</code></pre>
+<p>然后再在本地存放博客的文件夹里的放上一个路径为 static/.github/workflows/main.yml 的同样文件（因为 Gridea在上传过程中会把原有仓库里的 main.yml 给删掉）。</p>
+<ol>
+<li>在 Gitee 上开启 pages 服务</li>
+<li>到此，每当你在 Gridea 提交了”同步“，则 Github 会自动把仓库推送到 Gitee，然后需要你在Gitee 后台手动刷新<sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup> Pages 服务<br>
+<img src="https://pic.downk.cc/item/5fafb26d1cd1bbb86bf0daf9.png" alt="" loading="lazy"></li>
+</ol>
+<h2 id="提示">提示</h2>
+<ul>
+<li>文章具有时效性，可能后续 Gridea 会增加对 Gitee 的支持，或者文章中的语法、使用方式发生变化，操作中请结合具体实际情况作出改动。</li>
+<li><strong>不要直接复制</strong> demo 里的 yml文件进行配置（里面有一个 uses: ./. 是相对路径），要看清楚</li>
+<li>（1）的方法中，交给 Gitee 的是<strong>公钥</strong>（id_rsa.pub 文件全文），填到 Github 的是<strong>密钥</strong>（id_rsa 文件全文）</li>
+</ul>
+<h2 id="后记">后记</h2>
+<p>真的不容易……以前根本没有详细了解 Github action，导致写配置文件的时候老是写错，写错又得看到底错在哪里，找文档和搜索引擎（这个阶段主要是因为我个人的独特需求导致的，详情请看下一篇文章），这一堆堆的报错通知啊……<br>
+<img src="https://pic.downk.cc/item/5fa64f631cd1bbb86be3a972.png" alt="" loading="lazy"></p>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p><a href="https://github.com/yanglbme/gitee-pages-action">自动部署 Gitee Pages</a> <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p><a href="http://www.ruanyifeng.com/blog/2019/09/getting-started-with-github-actions.html">《Github Actions 入门教程》</a> <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn3" class="footnote-item"><p>项目地址 &gt; 服务 &gt;  Gitee Pages &gt; 更新 <a href="#fnref3" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
 ]]></content>
     </entry>
     <entry>
@@ -120,6 +275,21 @@
         <content type="html"><![CDATA[<blockquote>
 <p>亲戚送了我一个笔记本，结果是商务本，比游戏本还贵，但显卡只有 1G 核显，很无语，明明跟他们说不要买商务本，商务本划不来，还是买了。最令人吐槽的是这个商务本没有usb接口，两个雷电加一个 Type-C,可坑惨我了，还得花钱买 Type-C 扩展坞（雷电扩展坞贵的要死，又加上雷电接口兼容 Type-C，所以只买了 Type-C 的，而且网上卖的主打雷电扩展的百元级扩展坞全是 Type-C ，营销手段没特别明说而已）</p>
 </blockquote>
+<!--more-->
+<h2 id="影音">影音</h2>
+<p>迫于宿舍开流量信号不好且室友都不愿意装校园宽带，所以我直接用<strong>人人影视</strong>先离线下好影视剧/电影，然后用 Potplayer 打开看<br>
+至于看看 abcd站、直播啥的，用手机，当然我也说了，宿舍开流量信号不好，所以基本没看直播。<br>
+<img src="https://pic.downk.cc/item/5f93b8621cd1bbb86b2bc55c.jpg" alt="我的人人影视" loading="lazy"></p>
+<h2 id="游戏">游戏</h2>
+<p>商务本，几乎玩不了啥游戏，再加上没网以及舍友只会玩撸啊撸和王者荣耀，我一个人没意思，所以下的能局域网联机的红警、cs1.6、求生之路、挺进地牢、无名杀都没有玩。需要注意：没配置的商务本去找些 2d的、卡牌的、前些年的游戏玩比较好<br>
+当然<s>跟其中一个人打好招呼了，我下一个 RetroArch，两个人一起拿手柄玩街机游戏</s><br>
+没有人愿意</p>
+<h2 id="阅读">阅读</h2>
+<p>嗯……我有电纸书阅读器啊，这个电脑顶多做一些文本处理工作（Calibre）</p>
+<h2 id="学习116-更新">学习（11/6 更新）</h2>
+<p>一咬牙一跺脚，办校园宽带为学习所用（主要是高数）等校园宽带办了后，用作上网课（一对一）和看网课（录播课）的设备。</p>
+<h2 id="社交">社交</h2>
+<p>嗯——社团带电脑学习算不算？</p>
 ]]></content>
     </entry>
     <entry>
@@ -131,6 +301,51 @@
         <summary type="html"><![CDATA[<p>记录一下简明的宿舍必备物品清单（对我而言），有一些是我还没有但是我看起来需要的。宿舍的物品一定要具备单人使用无烦恼，轻量、方便、不太占地方，毕竟宿舍不是你一个人住。然后这些物品都基本上不是小物件，比如牙刷毛巾啥的就不用都列出来了</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>记录一下简明的宿舍必备物品清单（对我而言），有一些是我还没有但是我看起来需要的。宿舍的物品一定要具备单人使用无烦恼，轻量、方便、不太占地方，毕竟宿舍不是你一个人住。然后这些物品都基本上不是小物件，比如牙刷毛巾啥的就不用都列出来了</p>
+<!-- more -->
+<h2 id="收纳类">收纳类</h2>
+<ul>
+<li>挂篮/挂袋 放床栏杆旁边的那种</li>
+<li>收纳袋 挂起来放笔啊剪刀之类的</li>
+<li>收纳箱 装一些不常用但是直接放容易乱的东西</li>
+</ul>
+<h2 id="洗漱类">洗漱类</h2>
+<ul>
+<li>折叠盆 洗脸洗脚洗衣服，收起来也不占地方</li>
+<li>浓缩洗衣液</li>
+<li>洗涤精 与上面那个都最好是按压型，方便收拾</li>
+</ul>
+<h2 id="生活类">生活类</h2>
+<ul>
+<li>晾衣杆 放柜子里的，伸缩免打孔</li>
+<li>除湿袋 也放柜子里，南方伤不起</li>
+<li>垃圾袋 带挂绳，方便</li>
+<li>饭盒 能泡泡面，防止晚上饿了</li>
+<li>宿舍灯 立灯亮，挂灯不占地方，磁吸挂灯可以起夜用但是…买个拍拍灯不更好？（当时没想到，三种灯我选的是第三个）</li>
+<li>除味喷雾和干洗泡沫喷雾 前者可以除去<s>火锅</s>吃饭后在衣领留下的味道，后者是秋冬洗袄子不太方便时使用</li>
+</ul>
+<h2 id="医药类">医药类</h2>
+<ul>
+<li>碘伏棉球/棉签 免去同时买碘酒+棉签的烦恼，好用还方便收拾，关键用起来不痛</li>
+<li>日本液体创口贴 像涂药一样涂在伤口上立干形成保护层还防水消毒，不过涂的时候特别痛</li>
+<li>通鼻喷雾 当你感冒鼻子不通很难受/睡不着时，喷一下</li>
+<li>中草药蚊不叮 这个特别管用，比六神好用多了</li>
+</ul>
+<h2 id="可选类">可选类</h2>
+<ul>
+<li>蚊帐 蚊帐+挂帘，防蚊又给自己留隐私，还防虫爬到你床上，此外夏天还可以与小挂扇搭配</li>
+<li>眼罩 如果买了上面那个 就不需要买了</li>
+<li>耳塞 目前自己用过的<strong>安耳悠</strong>降噪效果最好，不过看到别人说国产品牌<strong>零听</strong>符合国人习惯带着不会耳朵痛</li>
+<li>Kindle 宿舍那会给你那么多空间放书啊，就算有，你全把自己喜欢的书从家里拿过来也够呛</li>
+</ul>
+<hr>
+<p>一些相关的贴士：<br>
+1.关键词“宿舍”“准备”等等在知乎上搜应该有一堆问答<br>
+2.少数派相关文章</p>
+<ul>
+<li><a href="https://sspai.com/post/62286">有壶热水就能做，顶饱又方便的宿舍美食</a></li>
+<li><a href="https://sspai.com/post/62240">提高宿舍生活品质，作者们推荐了这些好物</a></li>
+</ul>
+<p>3.拼多多我没用过，看起来应该是大学生/独居人小东西省钱的一种路吧。</p>
 ]]></content>
     </entry>
     <entry>
@@ -144,6 +359,27 @@
 ]]></summary>
         <content type="html"><![CDATA[<p>题外话：目前咪咕版的 Kindle 青春版（还是叫入门版？）二手售价有的低至180，所以关于经济的电纸书阅读器推荐的话，要么买二手咪咕版 Kindle，要么买京东、当当、小米、IReader这种牌子的价格500上下阅读器（当然要仔细辨别啊）。<br>
 下面是自己目前仍在用的 Kindle 工具清单。</p>
+<!-- more -->
+<blockquote>
+<p>几年前买的Kindle（当时咪咕版还没出）</p>
+</blockquote>
+<h2 id="工具">工具：</h2>
+<ul>
+<li>Calibre：“一站式”的电子书解决方案，简而言之就是电子书管理转换等等功能都有
+<ul>
+<li>EpubSplit 插件，用于分割过大的合集电子书</li>
+<li>Chinese Text Conversion 插件，繁简转换</li>
+</ul>
+</li>
+<li>EasyPub：功能丰富，我主要用来把 TXT 小说转成带目录的 azw3 文件</li>
+<li>sdr-Cleaner：书伴制作的清理 Kindle 无用 sdr 文件夹工具</li>
+</ul>
+<h2 id="注意事项">注意事项</h2>
+<p>经量不要买钢化膜和高清膜，容易反光和接触不良，我第二次买膜的时候就被坑了，钢化高清膜点半天 Kindle 才有反应，最后还是换上了磨砂软膜，我买膜的目的是为了防止刮花和指纹。</p>
+<h2 id="特别感谢网站">特别感谢网站：</h2>
+<ul>
+<li>书伴——为静心阅读而生，给我很多使用技巧和工具推荐</li>
+</ul>
 ]]></content>
     </entry>
     <entry>
@@ -161,6 +397,22 @@
 <blockquote>
 <p>请注意文章部分具有的时效性</p>
 </blockquote>
+<!-- more -->
+<h2 id="开始前">开始前</h2>
+<ul>
+<li>我已安装 Node.js</li>
+<li>已经把 Node.js 加上了淘宝镜像源来加速</li>
+<li>我已经安装 Calibre</li>
+</ul>
+<h2 id="准备工作">准备工作</h2>
+<ol>
+<li>安装 gitbook等所需模块：<code>npm install gitbook-cli ebook-convert -g</code></li>
+<li>（使用加速）克隆需要做成书的项目到本地：<code>git clone https://g.ioiox.com/https://github.com/jackfrued/Python-Core-50-Courses.git</code></li>
+<li>提取文件夹里所有md文件的文件名，随后要用到。这里使用的是 Windows 的 tree 命令：<code>tree E:\Python-Core-50-Courses /f &gt;E:\Python-Core-50-Courses\SUMMARY.md</code></li>
+<li>当然，你也可以直接在该文件夹下使用  <code>tree /f &gt; SUMMARY.md</code></li>
+</ol>
+<h2 id="开始制作">开始制作</h2>
+<p>已失败，具体情况看<a href="https://blog.csdn.net/Lowerce/article/details/107579261">这篇文章</a>，与他不相同的是我不想换低版本，所以另寻别的工具</p>
 ]]></content>
     </entry>
     <entry>
@@ -180,6 +432,47 @@
 <p>并不是网站服务器状态显示<br>
 可以在“关于我”查看效果</p>
 </blockquote>
+<!-- more -->
+<h1 id="准备一下">准备一下</h1>
+<p>这我老早就想做了，一直咕到现在😂。<br>
+该文章中需要的物件：</p>
+<ul>
+<li>小牌牌渲染服务网站：<a href="https://shields.io/">Shields</a></li>
+<li>一个 endpoint，或者一个 api ，甚至是一个 json 文件，都可以</li>
+</ul>
+<h1 id="简单说一下怎么用">简单说一下怎么用</h1>
+<p>在 Github 上我们总可以看到一种小牌牌放在 Readme 里，基本上都是由 Shields.io 渲染的（如图）， Shields.io 提供包括 Build Code Coverage Analysis Chat Dependencies Size 等等类型的展示。都是动态更新的，当然也可以弄一块静态的牌牌，不过既然都是静态了，直接放一个 svg 图片岂不是更好？，我使用的是 Dynamic 这种，endpoint我不是开发者，没必要专门再弄一个 api 出来。<br>
+<img src="https://pic.downk.cc/item/5f3a264014195aa594925132.png" alt="" loading="lazy"></p>
+<h1 id="开始缝合">开始缝合</h1>
+<p>第一步，找一个api地址，我是v站用户，所以直接使用v站的api，详情请看 <a href="https://www.v2ex.com/p/7v9TEc53">V2EXAPI接口</a>。<br>
+第二步，研究下 v站api，显示我的签名部分（即用户的自我介绍）只需要  <code>https://www.v2ex.com/api/members/show.json?username=用户名</code> 或者 <code>https://www.v2ex.com/api/members/show.json?id=用户id</code> ，然后只展示其中的 tagline 部分（bio 部分也行）其实前者就是用户设置的“签名”，后者是“个人简介”。v 站用户 api 的 json 部分数据例子：</p>
+<pre><code class="language-json">{
+	&quot;username&quot;: &quot;你的用户名&quot;,
+	&quot;website&quot;: &quot;&quot;,
+	&quot;bio&quot;: &quot;想学习&quot;,
+	&quot;url&quot;: &quot;https://www.v2ex.com/u/你的用户名&quot;,
+	&quot;tagline&quot;: &quot;&quot;,
+	&quot;status&quot;: &quot;found&quot;,
+……
+	&quot;id&quot;: 你的id
+}
+</code></pre>
+<p>第三步，打开 <a href="https://shields.io/">Shields.io</a> ，翻到 Dynamic（如图二） 。从左至右依次是：数据类型 | 牌牌标签 | API地址 | 标签颜色 | 内容前缀 | 内容后缀。<br>
+<img src="https://i.loli.net/2020/08/31/JLQb8ejV26Czvio.png" alt="" loading="lazy"><br>
+这样说不太直观，参照第二步我已知的数据：</p>
+<ol>
+<li>data type，因为是 json 文件，所以选 json</li>
+<li>label， 我想展示的是状态，那么填“状态”</li>
+<li>data url，填入 <code>https://www.v2ex.com/api/members/show.json?username=我的用户名</code></li>
+<li>query，展示其中的 bio 字段 ，则填 <code>$.bio</code>。</li>
+<li>color，填十六进制的颜色代码，我选择浅蓝色 <code>9cf</code>，若是在别的地方查询到的代码带有 # 号，请去掉。</li>
+<li>prefix/suffix，是前缀，为了举例子，我分别填“现在是”和“的心情”。</li>
+<li>点击 Make Badge ，成果如下图，注意这里的下图是静态标签，不过照着这个步骤来也是这样的显示效果，在此文中做成静态只是方便我展示。</li>
+<li>有各种标签样式，用法与外观详见 Shields.io 的官网 Styles 一栏，可高度自定义。这里有现成的<a href="https://www.dazhuanlan.com/2020/01/29/5e31a83e30b5c/">中文版用法</a>，<strong>注意除第一个字段用问号连接外，其余字段都需用 &amp; 连接。</strong><br>
+<img src="https://img.shields.io/badge/%E7%8A%B6%E6%80%81-%E7%8E%B0%E5%9C%A8%E6%98%AF%E6%83%B3%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%BF%83%E6%83%85-9cf" alt="" loading="lazy"></li>
+</ol>
+<h1 id="结束">结束</h1>
+<p>其实还有我提到过的玩法，比如有时你长时间不想写文章但是又想证明你还活着，你可以生成一个“博客主在 几年几月几日 曾经来过”的标签。也可以动态更新签名、心情之类。有一个动态小牌子项目，支持哔哩哔哩、酷安、知乎、微博等平台数据展示，这是 <a href="https://github.com/spencerwooo/Substats#supported-services">Github 项目地址</a>，配色？我用的<a href="https://colors.ichuantong.cn/">这个</a>。</p>
 ]]></content>
     </entry>
 </feed>

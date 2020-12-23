@@ -27,8 +27,8 @@ jobs:
         dst_token:  ${{ secrets.GITEE_TOKEN }}
         white_list: "dyxang"
         force_update: true
-      - name: Find and Replace
-        uses: jacobtomlinson/gha-find-replace@master
-        with:
-          find: "dyxang.gitee.io"
-          replace: "1inn.now.sh"
+    - name: Find and Replace
+      uses: jacobtomlinson/gha-find-replace@master
+      with:
+        find: "dyxang.gitee.io"
+        replace: "1inn.now.sh"

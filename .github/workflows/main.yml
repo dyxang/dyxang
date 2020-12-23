@@ -27,12 +27,6 @@ jobs:
         dst_token:  ${{ secrets.GITEE_TOKEN }}
         white_list: "dyxang"
         force_update: true
-  job3:
-    needs: [job2]
-    name: 再重新把网址替换为原网址确保国际节点网站保持原样
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
       - name: Find and Replace
         uses: jacobtomlinson/gha-find-replace@master
         with:

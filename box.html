@@ -57,14 +57,6 @@
         font-family: 'Noto Serif SC', serif;
     }
     
-    aside {
-        font-weight: 300;
-        font-style: normal;
-        line-height: 1.8rem;
-    }
-    a {text-decoration:none
-    }
-    
     #app,
     header,
     footer {
@@ -136,18 +128,6 @@
         background: #666;
         color: #fff;
     }
-    aside{
-		font-weight: 300;
-		font-style: normal;
-		line-height: 1.8rem;
-		position: fixed;
-		right: 100px;
-		top: 80px;
-		width: 200px;
-		padding: 10px 20px;
-		border-radius: 5px;
-		box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
-	}
 </style>
 <body>
     <header id="header">
@@ -156,7 +136,7 @@
     <main id="app">
         <aside>
             <p id="describe">
-                <a href="https://1inn.now.sh" >Dyxang</a>:这是我的清单，上面写了一条条的博客动态
+                这是我的清单，上面写了一条条的博客动态
             </p>
         </aside>
         <p class="tip">现在总共列了 {{count}} 条</p>
@@ -209,7 +189,6 @@
         return str;
     }
 
-    //增加发图片功能
     function urlToLink(str) {
         var re = /\bhttps?:\/\/(?!\S+(?:jpe?g|png|bmp|gif|webp|gif))\S+/g;
         var re_forpic = /\bhttps?:\/\/.*?(\.gif|\.jpeg|\.png|\.jpg|\.bmp|\.webp)/g;

@@ -779,6 +779,8 @@ Error message and password prompt
 
 <li>信息</li>
 
+<li>一些没用但是基本都会错的细节</li>
+
 <li>引导页面</li>
 
 <li>在 Node.js 版本 TiddlyWiki 中安装插件</li>
@@ -794,6 +796,8 @@ Error message and password prompt
 <li>Highlight.js 在 TiddlyWiki 中支持的代码语言</li>
 
 <li>Hosts 文件相关操作</li>
+
+<li>Markdown 添加脚注</li>
 
 <li>PowerShell 相关命令操作</li>
 
@@ -876,8 +880,8 @@ Error message and password prompt
 <div created="20201121120212648" creator="Dyxang" modified="20201121120216084" modifier="Dyxang" title="$:/config/SideBar/Visibility/$:/core/ui/SideBar/Open">
 <pre>hide</pre>
 </div>
-<div created="20201205041943602" creator="Dyxang" modified="20201205063441188" modifier="Dyxang" title="$:/config/SideBar/Visibility/$:/core/ui/SideBar/Recent">
-<pre>hide</pre>
+<div created="20201205041943602" creator="Dyxang" modified="20210108145928977" modifier="途读" title="$:/config/SideBar/Visibility/$:/core/ui/SideBar/Recent">
+<pre>show</pre>
 </div>
 <div created="20201205061559498" creator="Dyxang" modified="20201205061601118" modifier="Dyxang" title="$:/config/TextEditor/EditorHeight/Mode">
 <pre>auto</pre>
@@ -16149,7 +16153,7 @@ wikilist-button-foreground: #000</pre>
 <div bag="default" created="20201116132346266" creator="D" modified="20201221060159399" modifier="途du" revision="1" title="$:/status/UserName">
 <pre>途读</pre>
 </div>
-<div created="20210101062343027" creator="途读" list="[[TiddlyWiki 宏]] 复制到剪贴板（宏） 引导页面" modified="20210101072618901" modifier="途读" title="$:/StoryList">
+<div created="20210109092726354" creator="途读" list="[[Markdown 添加脚注]] 引导页面" modified="20210109092726354" modifier="途读" title="$:/StoryList">
 <pre></pre>
 </div>
 <div bag="default" created="20150117152612000" modified="20161019072400497" revision="0" tags="$:/tags/Stylesheet" title="$:/styles/tw5.com/doc-styles" type="text/vnd.tiddlywiki">
@@ -20584,6 +20588,9 @@ select {
 <div caption="信息" created="20201216071204149" creator="Dyxang" modified="20201216071224084" modifier="Dyxang" tags="$:/tags/TextEditor/Snippet" title="信息">
 <pre>&lt;&lt;.info &quot;&quot;&gt;&gt;</pre>
 </div>
+<div created="20210108145937819" creator="途读" modified="20210108150044063" modifier="途读" tags="生活 现实 碎片知识" title="一些没用但是基本都会错的细节">
+<pre>* 是钢琴家“郎朗”而不是“朗朗”</pre>
+</div>
 <div created="20201119024109126" creator="Dyxang" modified="20201222045953869" modifier="途读" tags="维基系统 引导" title="引导页面">
 <pre>:这是一个简单的引导页面，你进入的是我的知识库，存放一些碎片知识。
 
@@ -20766,6 +20773,21 @@ text = &quot;# This is not a comment because it's inside quotes.&quot;
 ipconfig /flushdns
 //ipconfig -h 查看所有命令
 ```</pre>
+</div>
+<div created="20210109091256964" creator="途读" modified="20210109093009497" modifier="途读" tags="Markdown 碎片知识" title="Markdown 添加脚注">
+<pre>添加脚注，在文章底部显示。
+
+```md
+这里有一个脚注[^1]，这是一段话。
+[^1]:脚注内容
+```
+直接在文章中写出
+
+```md
+这里有注释^[里面包含注释内容]，这是一段话。
+```
+
+很遗憾的是，原生 TiddlyWiki 不支持脚注之类的格式，只能通过安装[[这种插件|https://github.com/kookma/TW-Refnotes]]来实现（这个插件正在大修中，2021 年冬季将发布新版本。此新版本仅适用于 Tiddlywiki 5.1.23+）</pre>
 </div>
 <div created="20201205124025483" creator="Dyxang" modified="20201215134755790" modifier="Dyxang" tags="PowerShell 命令行 Windows" title="PowerShell 相关命令操作">
 <pre>!!在命令行里运行命令

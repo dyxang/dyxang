@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://1inn.now.sh</id>
     <title>途读</title>
-    <updated>2021-01-01T07:35:26.986Z</updated>
+    <updated>2021-01-09T10:01:15.335Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://1inn.now.sh"/>
     <link rel="self" href="https://1inn.now.sh/atom.xml"/>
@@ -11,25 +11,63 @@
     <icon>https://1inn.now.sh/favicon.ico</icon>
     <rights>All rights reserved 2021, 途读</rights>
     <entry>
+        <title type="html"><![CDATA[改造“B 言 B 语”并直接移植到网页端]]></title>
+        <id>https://1inn.now.sh/post/gai-zao-b-yan-b-yu-bing-zhi-jie-yi-zhi-dao-wang-ye-duan/</id>
+        <link href="https://1inn.now.sh/post/gai-zao-b-yan-b-yu-bing-zhi-jie-yi-zhi-dao-wang-ye-duan/">
+        </link>
+        <updated>2021-01-09T09:34:35.000Z</updated>
+        <summary type="html"><![CDATA[<p>这是一个毫无技术含量的移植（= =）<br>
+背景请看这篇<a href="https://sspai.com/post/60024?utm=qndydtracker">保卫表达：用后端 BaaS 快速搭建专属无点赞评论版微博——b言b语</a></p>
+]]></summary>
+        <content type="html"><![CDATA[<p>这是一个毫无技术含量的移植（= =）<br>
+背景请看这篇<a href="https://sspai.com/post/60024?utm=qndydtracker">保卫表达：用后端 BaaS 快速搭建专属无点赞评论版微博——b言b语</a></p>
+<!-- more -->
+<p>去年六月份就想弄了，一直拖到现在，其实很简单，就是让 Waline 与 b言b语共用同一个云存储。以发评论的形式来发“说说”，之前官方有 Tasker（需要手机 root）、微信、Quiker 、Termux、uTools等等版本，但是网页版才是真正的跨平台！</p>
+<ol>
+<li>安装 <a href="https://waline.js.org">Waline</a></li>
+<li>去下载<a href="https://github.com/daibor/nonsense.fun">b言b语</a></li>
+<li>把所有<code>i.attributes.content</code>改成<code>i.attributes.comment</code>，再把<code>AV.Query('content')</code>改成<code>AV.Query('Comment')</code>，不需要在 LeanCloud 后台新建什么，其他照官方方法来</li>
+<li>完成，此后你只需要点开收藏的 Waline 评论网址，然后评论，即是发了一条“说说”</li>
+</ol>
+<p>让它有发图片功能的话就把</p>
+<pre><code class="language-js">    function urlToLink(str) {
+        var re = /(http|ftp|https):\/\/[\w-]+(.[\w-]+)+([\w-.,@?^=%&amp;:/~+#]*[\w-\@?^=%&amp;/~+#])?/g;;
+
+        str = str.replace(re, function(website) {
+            return &quot;&lt;a href='&quot; + website + &quot;' target='_blank'&gt; &lt;i class='iconfont icon-lianjie-copy'&gt;&lt;/i&gt;链接 &lt;/a&gt;&quot;;
+        });
+        return str;
+    }
+</code></pre>
+<p>替换成</p>
+<pre><code class="language-js">    function urlToLink(str) {
+        var re = /\bhttps?:\/\/(?!\S+(?:jpe?g|png|bmp|gif|webp|gif))\S+/g;
+        var re_forpic = /\bhttps?:\/\/.*?(\.gif|\.jpeg|\.png|\.jpg|\.bmp|\.webp)/g;
+        str = str.replace(re, function (website) {
+            return &quot;&lt;a href='&quot; + website +
+                &quot;' target='_blank'&gt; #链接 &lt;/a&gt;&quot;;
+        });
+        str = str.replace(re_forpic, function (imgurl) {
+            return &quot;&lt;img src='&quot; + imgurl + &quot;'  /&gt; &quot;;
+        });
+        return str;
+    }
+</code></pre>
+<p>就行了，评论纯文本链接会转为可点击链接，纯文本的图片链接会转为显示的图片。</p>
+<blockquote>
+<p>实际上，还有显示在博客首页 banner 当公告栏的玩法，以及适配博客样式变为博客单页面的一部分，还有“说说”每一条显示发布平台的玩法，但没试过。</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[我为什么使用 TiddlyWiki]]></title>
         <id>https://1inn.now.sh/post/wo-wei-shi-me-shi-yong-tiddlywiki/</id>
         <link href="https://1inn.now.sh/post/wo-wei-shi-me-shi-yong-tiddlywiki/">
         </link>
         <updated>2021-01-01T06:09:02.000Z</updated>
-        <summary type="html"><![CDATA[<p>TiddlyWiki<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup> 作为我曾经浏览过的收集知识的工具（不像很多人把它当作学习笔记，比如 RoamResearch<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup>）。并不能称为我的知识管理系统。老实说我所做的事没有那么高级，所以不会在文章提及一些高级技巧（如卡片盒笔记法<sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup>），在这篇文章里我只写一件事情——关于我选择 TiddlyWiki 以及收集知识这一块的思考。</p>
-<hr class="footnotes-sep">
-<section class="footnotes">
-<ol class="footnotes-list">
-<li id="fn1" class="footnote-item"><p>若想了解，推荐繁体中文网站 <a href="http://tw5-zh.tiddlyspot.com/">TiddlyWiki 舞</a>，内容翻译很全，几乎照搬官方网站 <a href="#fnref1" class="footnote-backref">↩︎</a></p>
-</li>
-<li id="fn2" class="footnote-item"><p>想用但没有钱来购买 RoamResearch，可以看一下 Tiddlywiki 的变种 <a href="https://tiddlyroam.org/">tiddlyroam</a>  <a href="#fnref2" class="footnote-backref">↩︎</a></p>
-</li>
-<li id="fn3" class="footnote-item"><p><a href="https://sspai.com/post/60466">How to take smart notes，方法及工具</a> <a href="#fnref3" class="footnote-backref">↩︎</a></p>
-</li>
-</ol>
-</section>
+        <summary type="html"><![CDATA[<p>TiddlyWiki[^1]，内容翻译很全，几乎照搬官方网站] 作为我曾经浏览过的收集知识的工具（不像很多人把它当作学习笔记，比如 RoamResearch[<sup>2]）。并不能称为我的知识管理系统。老实说我所做的事没有那么高级，所以不会在文章提及一些高级技巧（如卡片盒笔记法[</sup>3]），在这篇文章里我只写一件事情——关于我选择 TiddlyWiki 以及收集知识这一块的思考。</p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>TiddlyWiki<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup> 作为我曾经浏览过的收集知识的工具（不像很多人把它当作学习笔记，比如 RoamResearch<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup>）。并不能称为我的知识管理系统。老实说我所做的事没有那么高级，所以不会在文章提及一些高级技巧（如卡片盒笔记法<sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup>），在这篇文章里我只写一件事情——关于我选择 TiddlyWiki 以及收集知识这一块的思考。</p>
+        <content type="html"><![CDATA[<p>TiddlyWiki<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>，内容翻译很全，几乎照搬官方网站] 作为我曾经浏览过的收集知识的工具（不像很多人把它当作学习笔记，比如 RoamResearch<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup>）。并不能称为我的知识管理系统。老实说我所做的事没有那么高级，所以不会在文章提及一些高级技巧（如卡片盒笔记法<sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup>），在这篇文章里我只写一件事情——关于我选择 TiddlyWiki 以及收集知识这一块的思考。</p>
 <!-- more -->
 <p>TiddlyWiki 之所以坚持这么久，其中重要原因肯定有社区模式的加持，在社区模式维护下的这开源项目一直呈现着旺盛的生命力，如瑞士军刀般功能强大且拥有着丰富的插件及扩展性。正好符合我的需求，我也不用担心它的发展或现有功能满足不了我了，知名度在国内也不用说。连<s>什么火就搬什么的</s>哔哩哔哩都出现了它的身影，不过我始终不明白，明明前几年就有人提到（最早可追溯到 2007 年），而且语言早就有中文，为什么到近几年才在国内慢慢火起来。<br>
 我想其中的根本原因是国内有关它的中文教程很少，正因为 TiddlyWiki 的复杂，所以很难写全攻略。<br>
@@ -54,9 +92,9 @@
 <hr class="footnotes-sep">
 <section class="footnotes">
 <ol class="footnotes-list">
-<li id="fn1" class="footnote-item"><p>若想了解，推荐繁体中文网站 <a href="http://tw5-zh.tiddlyspot.com/">TiddlyWiki 舞</a>，内容翻译很全，几乎照搬官方网站 <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+<li id="fn1" class="footnote-item"><p>若想了解，推荐繁体中文网站 <a href="http://tw5-zh.tiddlyspot.com/">TiddlyWiki 舞</a> <a href="#fnref1" class="footnote-backref">↩︎</a></p>
 </li>
-<li id="fn2" class="footnote-item"><p>想用但没有钱来购买 RoamResearch，可以看一下 Tiddlywiki 的变种 <a href="https://tiddlyroam.org/">tiddlyroam</a>  <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+<li id="fn2" class="footnote-item"><p>想用但没有钱来购买 RoamResearch，可以看一下 Tiddlywiki 的变种 <a href="https://tiddlyroam.org/">tiddlyroam</a> <a href="#fnref2" class="footnote-backref">↩︎</a></p>
 </li>
 <li id="fn3" class="footnote-item"><p><a href="https://sspai.com/post/60466">How to take smart notes，方法及工具</a> <a href="#fnref3" class="footnote-backref">↩︎</a></p>
 </li>
@@ -190,7 +228,7 @@
 国内节点我选的是 Gitee，虽然 Coding 挺不错（属于腾讯），但是提供的二级域名是随机的长字符串，不方便记忆且我自己没有买域名的打算，再加上双方的免费版我测出的 ip不同，码云的来自上海，Coding 来自新加坡<br>
 我目前正在用的博客系统是 Gridea，不支持直接部署到Gitee，也不支持同时部署到两个平台，最关键的一点是 Gridea 要填自己的博客网址，也就是说 我同步到 Vercel（1inn.now.sh）上后，还得本地把网站文件中所有<code>1inn.now.sh</code>替换成<code>dyxang.gitee.io</code>，再同步到 Gitee（dyxang.gitee.io）。所以在一次次这种繁琐的操作后，我烦躁了，然后花了半天时间完成解决办法。<br>
 具体流程如下<br>
-<img src="https://pic.downk.cc/item/5fa653d41cd1bbb86be49331.png" alt="" loading="lazy"><br>
+<img src="https://pic.imgdb.cn/item/5fa653d41cd1bbb86be49331.png" alt="" loading="lazy"><br>
 我的 Github Action 文件：</p>
 <pre><code class="language-yaml">name: 博客节点同步
 on: [push]
@@ -298,7 +336,7 @@ jobs:
 <ol>
 <li>在 Gitee 上开启 pages 服务</li>
 <li>到此，每当你在 Gridea 提交了”同步“，则 Github 会自动把仓库推送到 Gitee，然后需要你在Gitee 后台手动刷新<sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup> Pages 服务<br>
-<img src="https://pic.downk.cc/item/5fafb26d1cd1bbb86bf0daf9.png" alt="" loading="lazy"></li>
+<img src="https://pic.imgdb.cn/item/5fafb26d1cd1bbb86bf0daf9.png" alt="" loading="lazy"></li>
 </ol>
 <h2 id="提示">提示</h2>
 <ul>
@@ -308,7 +346,7 @@ jobs:
 </ul>
 <h2 id="后记">后记</h2>
 <p>真的不容易……以前根本没有详细了解 Github action，导致写配置文件的时候老是写错，写错又得看到底错在哪里，找文档和搜索引擎（这个阶段主要是因为我个人的独特需求导致的，详情请看下一篇文章），这一堆堆的报错通知啊……<br>
-<img src="https://pic.downk.cc/item/5fa64f631cd1bbb86be3a972.png" alt="" loading="lazy"></p>
+<img src="https://pic.imgdb.cn/item/5fa64f631cd1bbb86be3a972.png" alt="" loading="lazy"></p>
 <hr class="footnotes-sep">
 <section class="footnotes">
 <ol class="footnotes-list">
@@ -339,7 +377,7 @@ jobs:
 <h2 id="影音">影音</h2>
 <p>迫于宿舍开流量信号不好且室友都不愿意装校园宽带，所以我直接用<strong>人人影视</strong>先离线下好影视剧/电影，然后用 Potplayer 打开看<br>
 至于看看 abcd站、直播啥的，用手机，当然我也说了，宿舍开流量信号不好，所以基本没看直播。<br>
-<img src="https://pic.downk.cc/item/5f93b8621cd1bbb86b2bc55c.jpg" alt="我的人人影视" loading="lazy"></p>
+<img src="https://pic.imgdb.cn/item/5f93b8621cd1bbb86b2bc55c.jpg" alt="我的人人影视" loading="lazy"></p>
 <h2 id="游戏">游戏</h2>
 <p>商务本，几乎玩不了啥游戏，再加上没网以及舍友只会玩撸啊撸和王者荣耀，我一个人没意思，所以下的能局域网联机的红警、cs1.6、求生之路、挺进地牢、无名杀都没有玩。需要注意：没配置的商务本去找些 2d的、卡牌的、前些年的游戏玩比较好<br>
 当然<s>跟其中一个人打好招呼了，我下一个 RetroArch，两个人一起拿手柄玩街机游戏</s><br>
@@ -440,39 +478,6 @@ jobs:
 <ul>
 <li>书伴——为静心阅读而生，给我很多使用技巧和工具推荐</li>
 </ul>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[记一次使用Gitbook生成电子书（失败）]]></title>
-        <id>https://1inn.now.sh/post/ji-yi-ci-shi-yong-gitbook-sheng-cheng-dian-zi-shu/</id>
-        <link href="https://1inn.now.sh/post/ji-yi-ci-shi-yong-gitbook-sheng-cheng-dian-zi-shu/">
-        </link>
-        <updated>2020-08-26T04:23:22.000Z</updated>
-        <summary type="html"><![CDATA[<p>开始学 python 了，看到 Github 项目《Python语言基础50课》挺不错想下下来在 kindle 上看，可惜没有现成电子书，只有md文件和知乎专栏文章。于是第一次踩坑 gitbook，记录一下适合自己的操作步骤。</p>
-<blockquote>
-<p>请注意文章部分具有的时效性</p>
-</blockquote>
-]]></summary>
-        <content type="html"><![CDATA[<p>开始学 python 了，看到 Github 项目《Python语言基础50课》挺不错想下下来在 kindle 上看，可惜没有现成电子书，只有md文件和知乎专栏文章。于是第一次踩坑 gitbook，记录一下适合自己的操作步骤。</p>
-<blockquote>
-<p>请注意文章部分具有的时效性</p>
-</blockquote>
-<!-- more -->
-<h2 id="开始前">开始前</h2>
-<ul>
-<li>我已安装 Node.js</li>
-<li>已经把 Node.js 加上了淘宝镜像源来加速</li>
-<li>我已经安装 Calibre</li>
-</ul>
-<h2 id="准备工作">准备工作</h2>
-<ol>
-<li>安装 gitbook等所需模块：<code>npm install gitbook-cli ebook-convert -g</code></li>
-<li>（使用加速）克隆需要做成书的项目到本地：<code>git clone https://g.ioiox.com/https://github.com/jackfrued/Python-Core-50-Courses.git</code></li>
-<li>提取文件夹里所有md文件的文件名，随后要用到。这里使用的是 Windows 的 tree 命令：<code>tree E:\Python-Core-50-Courses /f &gt;E:\Python-Core-50-Courses\SUMMARY.md</code></li>
-<li>当然，你也可以直接在该文件夹下使用  <code>tree /f &gt; SUMMARY.md</code></li>
-</ol>
-<h2 id="开始制作">开始制作</h2>
-<p>已失败，具体情况看<a href="https://blog.csdn.net/Lowerce/article/details/107579261">这篇文章</a>，与他不相同的是我不想换低版本，所以另寻别的工具</p>
 ]]></content>
     </entry>
 </feed>

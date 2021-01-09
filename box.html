@@ -180,16 +180,6 @@
         }
     })
     function urlToLink(str) {
-        var re = /(http|ftp|https):\/\/[\w-]+(.[\w-]+)+([\w-.,@?^=%&:/~+#]*[\w-\@?^=%&/~+#])?/g;;
-
-        str = str.replace(re, function (website) {
-            return "<a href='" + website +
-                "' target='_blank'> #链接 </a>";
-        });
-        return str;
-    }
-
-    function urlToLink(str) {
         var re = /\bhttps?:\/\/(?!\S+(?:jpe?g|png|bmp|gif|webp|gif))\S+/g;
         var re_forpic = /\bhttps?:\/\/.*?(\.gif|\.jpeg|\.png|\.jpg|\.bmp|\.webp)/g;
         str = str.replace(re, function (website) {

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://1inn.now.sh</id>
     <title>途读</title>
-    <updated>2021-01-09T10:01:15.335Z</updated>
+    <updated>2021-01-11T07:07:49.699Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://1inn.now.sh"/>
     <link rel="self" href="https://1inn.now.sh/atom.xml"/>
@@ -10,6 +10,42 @@
     <logo>https://1inn.now.sh/images/avatar.png</logo>
     <icon>https://1inn.now.sh/favicon.ico</icon>
     <rights>All rights reserved 2021, 途读</rights>
+    <entry>
+        <title type="html"><![CDATA[头像、昵称与标志的更换历史]]></title>
+        <id>https://1inn.now.sh/post/tou-xiang-biao-zhi-de-geng-huan-li-shi/</id>
+        <link href="https://1inn.now.sh/post/tou-xiang-biao-zhi-de-geng-huan-li-shi/">
+        </link>
+        <updated>2021-01-11T05:43:54.000Z</updated>
+        <content type="html"><![CDATA[<!-- more -->
+<p>很久很久之前，我都不知道自己会在博客路上走这么远。<br>
+就简单谈一下博客/头像的历史与寓意</p>
+<!-- more -->
+<h2 id="第一张头像">第一张头像</h2>
+<p>起初正式拥有独立博客时（二零一六年）我使用的是 Wordpress 注册了官方账号，为了使用 Gravatar，上传了一个头像——一个 <strong>@海猫络合物</strong> 画的人物截图，加上“爱写”两个字，寓意坚持写博客。而 <strong>@海猫络合物</strong> 在当时只是一个原画画师，还没有自己合作出明日方舟这样的爆款手游，不过有趣的是，当时 ta 微博上画的一些草稿与原型基本符合了日后明日方舟干员的形象与设定，而我截取的这一张头像刚好是贴近 ta 日后创立的明日方舟的设定图。<br>
+<img src="https://sdn.geekzu.org/avatar/d320054ed87a28ef5d852f33836b0f99" alt="原版头像" loading="lazy"><br>
+在那之后很长一段时间，大概四年多，我都没有专门再弄一个头像来放在博客里，直到我最后一次使用 Windows 7，在从来不用的数位板上画出来这样一个头像。很长一段时间我甚至在社交软件里都使用它，即使不是很漂亮，但有个性就足够了。<br>
+<img src="https://cdn.jsdelivr.net/gh/dyxang/cdn/logo.png" alt="二代头像" loading="lazy"><br>
+现在，我决定在之后的社交网络注册中，坚持使用途读博客的头像，提高辨识度。这头像比较极简，长这样：<br>
+<img src="https://cdn.jsdelivr.net/gh/dyxang/cdn/logo.jpg" alt="三代头像" loading="lazy"><br>
+其实我在社交软件上的头像基本都很极简并辨识度很高，以至于在某些社群里失踪半年再回来还有人认得我……另外我现在刚注册了一个新的<a href="https://o3o.ca/@Dyxang">长毛象账号</a><sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>，欢迎关注~老账号几年前注册的一直没用，就忘了🌚。</p>
+<h2 id="网站图标来由">网站图标来由</h2>
+<p>第一个网站图标已经消失在互联网中了，是一个简单的 D 字母与各种寓意的拼接，其实并算不上真正意义上的网站图标，真正意义上我自己设计的网站图标一直沿用至今，没错，就是这个：<br>
+<img src="https://cdn.jsdelivr.net/gh/dyxang/dyxang/favicon.ico" alt="网站图标" loading="lazy"><br>
+不出意外的话我不会再更改了，类似变身器（大雾）的图形其实是字母“Y”，也是我姓名中的缩写，而白色方块则代表着字母“D”也就是我昵称的首字母，然后整体呈火炬状。制作它的起因就是在 Farbox 至 Bitcron 时期（参见 关于我 &gt; 时间轴），如果你没有自己的网站图标的话，默认显示的是服务商的官方图标，这一点很恼火，所以我就自制了一个图标。</p>
+<h2 id="昵称">昵称</h2>
+<p>起初我的博客叫 <strong>③d's blog</strong>，原因嘛，就是之前的昵称连续带三个“d”，多说几句，那个时候因为是博客独立域名，活着的友链还蛮多，甚至莫名其妙被一个独立博客收录站给收录过😂<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup>。<br>
+之后，我注册了 Github 账号，结合名字创立了“<strong>Dyxang</strong>”这个英文名，我的读法是“迪祥”，但是英语正确读法是“迪克斯昂”。至于途读，也是一直说的 to do &gt; 2do &gt; 途读，看我以前的域名就知道了。</p>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>关于长毛象的介绍，参见<a href="https://docs.o3o.ca/">《什么是长毛象？》</a>文档 <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p>让人无语的是，我的博客独立域名末期，我使用的 Typecho 博客主题的博主（早已互加友链）把自己的博客主题改为收费后就把我的友链直接删除，哪怕我把收费版本之前的那套博客主题换掉再重新加他友链他还是不理我，我想不至于我仅仅是使用收费前的主题版本让他不想让别人知道吧，而且有话好好说嘛，人心难料啊。 <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[改造“B 言 B 语”并直接移植到网页端]]></title>
         <id>https://1inn.now.sh/post/gai-zao-b-yan-b-yu-bing-zhi-jie-yi-zhi-dao-wang-ye-duan/</id>
@@ -444,40 +480,6 @@ jobs:
 <li><a href="https://sspai.com/post/62240">提高宿舍生活品质，作者们推荐了这些好物</a></li>
 </ul>
 <p>3.拼多多我没用过，看起来应该是大学生/独居人小东西省钱的一种路吧。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[整理 Kindle 工具清单]]></title>
-        <id>https://1inn.now.sh/post/zheng-li-kindle-gong-ju-qing-dan/</id>
-        <link href="https://1inn.now.sh/post/zheng-li-kindle-gong-ju-qing-dan/">
-        </link>
-        <updated>2020-08-30T07:48:36.000Z</updated>
-        <summary type="html"><![CDATA[<p>题外话：目前咪咕版的 Kindle 青春版（还是叫入门版？）二手售价有的低至180，所以关于经济的电纸书阅读器推荐的话，要么买二手咪咕版 Kindle，要么买京东、当当、小米、IReader这种牌子的价格500上下阅读器（当然要仔细辨别啊）。<br>
-下面是自己目前仍在用的 Kindle 工具清单。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>题外话：目前咪咕版的 Kindle 青春版（还是叫入门版？）二手售价有的低至180，所以关于经济的电纸书阅读器推荐的话，要么买二手咪咕版 Kindle，要么买京东、当当、小米、IReader这种牌子的价格500上下阅读器（当然要仔细辨别啊）。<br>
-下面是自己目前仍在用的 Kindle 工具清单。</p>
-<!-- more -->
-<blockquote>
-<p>几年前买的Kindle（当时咪咕版还没出）</p>
-</blockquote>
-<h2 id="工具">工具：</h2>
-<ul>
-<li>Calibre：“一站式”的电子书解决方案，简而言之就是电子书管理转换等等功能都有
-<ul>
-<li>EpubSplit 插件，用于分割过大的合集电子书</li>
-<li>Chinese Text Conversion 插件，繁简转换</li>
-</ul>
-</li>
-<li>EasyPub：功能丰富，我主要用来把 TXT 小说转成带目录的 azw3 文件</li>
-<li>sdr-Cleaner：书伴制作的清理 Kindle 无用 sdr 文件夹工具</li>
-</ul>
-<h2 id="注意事项">注意事项</h2>
-<p>经量不要买钢化膜和高清膜，容易反光和接触不良，我第二次买膜的时候就被坑了，钢化高清膜点半天 Kindle 才有反应，最后还是换上了磨砂软膜，我买膜的目的是为了防止刮花和指纹。</p>
-<h2 id="特别感谢网站">特别感谢网站：</h2>
-<ul>
-<li>书伴——为静心阅读而生，给我很多使用技巧和工具推荐</li>
-</ul>
 ]]></content>
     </entry>
 </feed>

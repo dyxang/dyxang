@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://1inn.now.sh</id>
     <title>途读</title>
-    <updated>2021-01-12T06:26:05.042Z</updated>
+    <updated>2021-02-03T14:36:02.125Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://1inn.now.sh"/>
     <link rel="self" href="https://1inn.now.sh/atom.xml"/>
@@ -10,6 +10,32 @@
     <logo>https://1inn.now.sh/images/avatar.png</logo>
     <icon>https://1inn.now.sh/favicon.ico</icon>
     <rights>All rights reserved 2021, 途读</rights>
+    <entry>
+        <title type="html"><![CDATA[小便条：关于网站提速那些事以及其他无关]]></title>
+        <id>https://1inn.now.sh/post/xiao-bian-tiao-guan-yu-wang-zhan-ti-su-na-xie-shi-yi-ji-qi-ta-wu-guan/</id>
+        <link href="https://1inn.now.sh/post/xiao-bian-tiao-guan-yu-wang-zhan-ti-su-na-xie-shi-yi-ji-qi-ta-wu-guan/">
+        </link>
+        <updated>2021-02-03T13:23:08.000Z</updated>
+        <content type="html"><![CDATA[<p>因为绞尽脑汁感觉已经没有什么可以写的了，所以只好列一些清单来给想提速的人一点启发，所以看起来肯定不像教程文章。</p>
+<h2 id="浏览器控制台">浏览器控制台</h2>
+<p>f12 打开你的控制台，然后看我的截图。浏览器控制台是最好的测速方式，当然测试结果也只符合你个人或你所在地区。不管怎么说，测试过程中也可以发现一些问题（通病）。<br>
+<img src="https://img.imgdb.cn/item/601ab2673ffa7d37b3097faf.jpg" alt="" loading="lazy"><br>
+<img src="https://img.imgdb.cn/item/601ab26b3ffa7d37b3098137.jpg" alt="" loading="lazy"></p>
+<h2 id="lighthouse">Lighthouse</h2>
+<p>是一个自动化网络审查工具，功能挺全，在开发者工具浏览器控制台里，也有<a href="https://developers.google.com/web/tools/lighthouse/">网页版</a>，以及<a href="https://developers.google.com/speed/pagespeed/insights/?hl=zh-cn">另一个类似的</a>（两个都需要科学上网）。基本上生成一个很详细的报告后，你就可以照着清单去改进了，我这里的截图以 Edge 浏览器控制台的 Lighthouse 为例。<br>
+比如，生成报告后，我们点击“查看原始跟踪”<br>
+<img src="https://img.imgdb.cn/item/601ab2753ffa7d37b30985b0.png" alt="" loading="lazy"><br>
+这样就可以看到中间那一行的网站快照，可以预估出访客访问你网站时等待一点五秒后有了画面，这一点很重要，不管网站有没有加载完，相信你也没有耐心看着空白好几秒的屏幕。<br>
+<img src="https://img.imgdb.cn/item/601ab2783ffa7d37b30986db.png" alt="" loading="lazy"></p>
+<h2 id="其他链接">其他链接</h2>
+<ul>
+<li><a href="https://www.vectorizer.io/">vectorizer</a>——图片矢量化</li>
+<li><a href="https://github.com/JohnsenZhou/Front-End-Checklist">前端开发清单</a>——是一份在站点/HTML页面发布到生产环境之前需要测试的所有元素的详尽列表。</li>
+</ul>
+<h2 id="其他无关">其他无关</h2>
+<p>我的小纸条地址是<a href="https://1inn.now.sh/box.html">https://1inn.now.sh/box.html</a></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[头像、昵称与标志的更换历史]]></title>
         <id>https://1inn.now.sh/post/tou-xiang-biao-zhi-de-geng-huan-li-shi/</id>
@@ -412,62 +438,6 @@ jobs:
 <p>一咬牙一跺脚，办校园宽带为学习所用（主要是高数）等校园宽带办了后，用作上网课（一对一）和看网课（录播课）的设备。</p>
 <h2 id="社交">社交</h2>
 <p>嗯——社团带电脑学习算不算？</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[宿舍用品清单]]></title>
-        <id>https://1inn.now.sh/post/su-she-yong-pin-qing-dan/</id>
-        <link href="https://1inn.now.sh/post/su-she-yong-pin-qing-dan/">
-        </link>
-        <updated>2020-10-10T14:40:10.000Z</updated>
-        <summary type="html"><![CDATA[<p>记录一下简明的宿舍必备物品清单（对我而言），有一些是我还没有但是我看起来需要的。宿舍的物品一定要具备单人使用无烦恼，轻量、方便、不太占地方，毕竟宿舍不是你一个人住。然后这些物品都基本上不是小物件，比如牙刷毛巾啥的就不用都列出来了</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>记录一下简明的宿舍必备物品清单（对我而言），有一些是我还没有但是我看起来需要的。宿舍的物品一定要具备单人使用无烦恼，轻量、方便、不太占地方，毕竟宿舍不是你一个人住。然后这些物品都基本上不是小物件，比如牙刷毛巾啥的就不用都列出来了</p>
-<!-- more -->
-<h2 id="收纳类">收纳类</h2>
-<ul>
-<li>挂篮/挂袋 放床栏杆旁边的那种</li>
-<li>收纳袋 挂起来放笔啊剪刀之类的</li>
-<li>收纳箱 装一些不常用但是直接放容易乱的东西</li>
-</ul>
-<h2 id="洗漱类">洗漱类</h2>
-<ul>
-<li>折叠盆 洗脸洗脚洗衣服，收起来也不占地方</li>
-<li>浓缩洗衣液</li>
-<li>洗涤精 与上面那个都最好是按压型，方便收拾</li>
-</ul>
-<h2 id="生活类">生活类</h2>
-<ul>
-<li>晾衣杆 放柜子里的，伸缩免打孔</li>
-<li>除湿袋 也放柜子里，南方伤不起</li>
-<li>垃圾袋 带挂绳，方便</li>
-<li>饭盒 能泡泡面，防止晚上饿了</li>
-<li>宿舍灯 立灯亮，挂灯不占地方，磁吸挂灯可以起夜用但是…买个拍拍灯不更好？（当时没想到，三种灯我选的是第三个）</li>
-<li>除味喷雾和干洗泡沫喷雾 前者可以除去<s>火锅</s>吃饭后在衣领留下的味道，后者是秋冬洗袄子不太方便时使用</li>
-</ul>
-<h2 id="医药类">医药类</h2>
-<ul>
-<li>碘伏棉球/棉签 免去同时买碘酒+棉签的烦恼，好用还方便收拾，关键用起来不痛</li>
-<li>日本液体创口贴 像涂药一样涂在伤口上立干形成保护层还防水消毒，不过涂的时候特别痛</li>
-<li>通鼻喷雾 当你感冒鼻子不通很难受/睡不着时，喷一下</li>
-<li>中草药蚊不叮 这个特别管用，比六神好用多了</li>
-</ul>
-<h2 id="可选类">可选类</h2>
-<ul>
-<li>蚊帐 蚊帐+挂帘，防蚊又给自己留隐私，还防虫爬到你床上，此外夏天还可以与小挂扇搭配</li>
-<li>眼罩 如果买了上面那个 就不需要买了</li>
-<li>耳塞 目前自己用过的<strong>安耳悠</strong>降噪效果最好，不过看到别人说国产品牌<strong>零听</strong>符合国人习惯带着不会耳朵痛</li>
-<li>Kindle 宿舍那会给你那么多空间放书啊，就算有，你全把自己喜欢的书从家里拿过来也够呛</li>
-</ul>
-<hr>
-<p>一些相关的贴士：<br>
-1.关键词“宿舍”“准备”等等在知乎上搜应该有一堆问答<br>
-2.少数派相关文章</p>
-<ul>
-<li><a href="https://sspai.com/post/62286">有壶热水就能做，顶饱又方便的宿舍美食</a></li>
-<li><a href="https://sspai.com/post/62240">提高宿舍生活品质，作者们推荐了这些好物</a></li>
-</ul>
-<p>3.拼多多我没用过，看起来应该是大学生/独居人小东西省钱的一种路吧。</p>
 ]]></content>
     </entry>
 </feed>

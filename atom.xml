@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://1inn.now.sh</id>
     <title>途读</title>
-    <updated>2021-02-03T14:38:24.417Z</updated>
+    <updated>2021-03-14T07:07:50.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://1inn.now.sh"/>
     <link rel="self" href="https://1inn.now.sh/atom.xml"/>
@@ -10,6 +10,203 @@
     <logo>https://1inn.now.sh/images/avatar.png</logo>
     <icon>https://1inn.now.sh/favicon.ico</icon>
     <rights>All rights reserved 2021, 途读</rights>
+    <entry>
+        <title type="html"><![CDATA[Excel 表格相关问题与全境封锁机密套装统计]]></title>
+        <id>https://1inn.now.sh/post/quan-jing-feng-suo-1-ji-mi-tao-zhuang-tong-ji-yu-biao-ge-xiang-guan-wen-ti/</id>
+        <link href="https://1inn.now.sh/post/quan-jing-feng-suo-1-ji-mi-tao-zhuang-tong-ji-yu-biao-ge-xiang-guan-wen-ti/">
+        </link>
+        <updated>2021-03-14T06:03:09.000Z</updated>
+        <summary type="html"><![CDATA[<p>眼花缭乱预警，关于什么是全境1，请谷歌或哔哩哔哩搜索。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>眼花缭乱预警，关于什么是全境1，请谷歌或哔哩哔哩搜索。</p>
+<!-- more -->
+<p>这是我做给群里萌新看的<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>，本文不谈论游戏内容，只有关于 excel 表格知识。<br>
+Markdown 表格的确不适合做表格统计，太复杂就会变成下面这样：</p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>面具</th>
+<th>背心</th>
+<th>背包</th>
+<th>护膝</th>
+<th>枪套</th>
+<th>手套</th>
+<th>是否洗好</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>掠夺</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td></td>
+</tr>
+<tr>
+<td>D3</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>是</td>
+</tr>
+<tr>
+<td>谋略</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>是</td>
+</tr>
+<tr>
+<td>女妖</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td></td>
+</tr>
+<tr>
+<td>火冠</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td></td>
+</tr>
+<tr>
+<td>阿尔法</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td></td>
+</tr>
+<tr>
+<td>浪人</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td></td>
+<td>有</td>
+<td></td>
+</tr>
+<tr>
+<td>最终</td>
+<td></td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td></td>
+<td>有</td>
+<td></td>
+</tr>
+<tr>
+<td>猎人</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td></td>
+</tr>
+<tr>
+<td>死眼</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td></td>
+</tr>
+<tr>
+<td>孤星</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td></td>
+</tr>
+<tr>
+<td>开拓</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>是</td>
+</tr>
+<tr>
+<td>突袭</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td></td>
+</tr>
+<tr>
+<td>卫哨</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td></td>
+</tr>
+<tr>
+<td>奇特</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td>有</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>满屏幕的“有”，看不清楚，统计了个寂寞。但是在 excel 表格里就显得非常完美。<strong>开始 &gt; 条件格式 &gt;新建规则</strong>，当单元格值为“有”时，单元格变成绿色，然后设置范围。再加个复选框“有/无”就可以有这种效果了。如图：</p>
+<p><img src="https://i.loli.net/2021/03/14/mQOtrHFWnejNUB2.png" alt="image.png" loading="lazy"><br>
+而统计装备数量呢，还可以添加柱形图，有一个直观的数量相对多少显示，方法还是<strong>开始 &gt; 条件格式 &gt;新建规则 &gt; 数据条 &gt; 填充</strong>，输入数字后会有相对数量的一个数据条显示，如图：<br>
+<img src="https://i.loli.net/2021/03/14/XP7c3W4DSoQ6ypV.png" alt="image.png" loading="lazy"><br>
+文章就到这里，具体还有一些有用的网站：</p>
+<ul>
+<li><a href="https://tableconvert.com/">表格转换网站</a>，很全，包括各种文件格式的一般表格转换</li>
+<li><a href="https://web.baimiaoapp.com/image-to-excel">图片转表格</a>，白描的图片转表格服务，类似免费的还有电脑版QQ（TIM）自带的图片转表格功能</li>
+</ul>
+<p>另外，我的网站底部更新了一个链接。</p>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>虽然很少有人看就是了。原因嘛，好多伸手党，不看群文件，有些问题指着教程硬问，提醒多次都不看的全都有，所以我发现轻小说群群友素质还是比游戏开黑群素质高到不知道哪里去了，我天天看到游戏群里萌新问问题都得高血压，哪里是萌新，明明是爷新，要别人饭喂到嘴里，有时候都喂到嘴里了还不用大脑思考。 <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[小便条：关于网站提速那些事以及其他无关]]></title>
         <id>https://1inn.now.sh/post/xiao-bian-tiao-guan-yu-wang-zhan-ti-su-na-xie-shi-yi-ji-qi-ta-wu-guan/</id>
@@ -411,36 +608,6 @@ jobs:
 </li>
 </ol>
 </section>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[商务本娱乐用小记]]></title>
-        <id>https://1inn.now.sh/post/shang-wu-ben-yu-le-yong-zhi-lu/</id>
-        <link href="https://1inn.now.sh/post/shang-wu-ben-yu-le-yong-zhi-lu/">
-        </link>
-        <updated>2020-10-24T05:10:41.000Z</updated>
-        <summary type="html"><![CDATA[<blockquote>
-<p>亲戚送了我一个笔记本，结果是商务本，比游戏本还贵，但显卡只有 1G 核显，很无语，明明跟他们说不要买商务本，商务本划不来，还是买了。最令人吐槽的是这个商务本没有usb接口，两个雷电加一个 Type-C,可坑惨我了，还得花钱买 Type-C 扩展坞（雷电扩展坞贵的要死，又加上雷电接口兼容 Type-C，所以只买了 Type-C 的，而且网上卖的主打雷电扩展的百元级扩展坞全是 Type-C ，营销手段没特别明说而已）</p>
-</blockquote>
-]]></summary>
-        <content type="html"><![CDATA[<blockquote>
-<p>亲戚送了我一个笔记本，结果是商务本，比游戏本还贵，但显卡只有 1G 核显，很无语，明明跟他们说不要买商务本，商务本划不来，还是买了。最令人吐槽的是这个商务本没有usb接口，两个雷电加一个 Type-C,可坑惨我了，还得花钱买 Type-C 扩展坞（雷电扩展坞贵的要死，又加上雷电接口兼容 Type-C，所以只买了 Type-C 的，而且网上卖的主打雷电扩展的百元级扩展坞全是 Type-C ，营销手段没特别明说而已）</p>
-</blockquote>
-<!--more-->
-<h2 id="影音">影音</h2>
-<p>迫于宿舍开流量信号不好且室友都不愿意装校园宽带，所以我直接用<strong>人人影视</strong>先离线下好影视剧/电影，然后用 Potplayer 打开看<br>
-至于看看 abcd站、直播啥的，用手机，当然我也说了，宿舍开流量信号不好，所以基本没看直播。<br>
-<img src="https://pic.imgdb.cn/item/5f93b8621cd1bbb86b2bc55c.jpg" alt="我的人人影视" loading="lazy"></p>
-<h2 id="游戏">游戏</h2>
-<p>商务本，几乎玩不了啥游戏，再加上没网以及舍友只会玩撸啊撸和王者荣耀，我一个人没意思，所以下的能局域网联机的红警、cs1.6、求生之路、挺进地牢、无名杀都没有玩。需要注意：没配置的商务本去找些 2d的、卡牌的、前些年的游戏玩比较好<br>
-当然<s>跟其中一个人打好招呼了，我下一个 RetroArch，两个人一起拿手柄玩街机游戏</s><br>
-没有人愿意</p>
-<h2 id="阅读">阅读</h2>
-<p>嗯……我有电纸书阅读器啊，这个电脑顶多做一些文本处理工作（Calibre）</p>
-<h2 id="学习116-更新">学习（11/6 更新）</h2>
-<p>一咬牙一跺脚，办校园宽带为学习所用（主要是高数）等校园宽带办了后，用作上网课（一对一）和看网课（录播课）的设备。</p>
-<h2 id="社交">社交</h2>
-<p>嗯——社团带电脑学习算不算？</p>
 ]]></content>
     </entry>
 </feed>

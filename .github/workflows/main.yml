@@ -9,7 +9,7 @@ jobs:
       - name: Find and Replace
         uses: jacobtomlinson/gha-find-replace@master
         with:
-          find: "1inn.now.sh"
+          find: "1inn.vercel.app"
           replace: "dyxang.gitee.io"
   job2:
     needs: [job1]
@@ -31,4 +31,4 @@ jobs:
       uses: jacobtomlinson/gha-find-replace@master
       with:
         find: "dyxang.gitee.io"
-        replace: "1inn.now.sh"
+        replace: "1inn.vercel.app"
